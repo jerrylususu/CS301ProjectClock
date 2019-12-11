@@ -1068,7 +1068,7 @@ LOAD c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m
                 0x08000000                g_pfnVectors
                 0x080001e4                . = ALIGN (0x4)
 
-.text           0x080001e8     0x9594
+.text           0x080001e8     0x95fc
                 0x080001e8                . = ALIGN (0x4)
  *(.text)
  .text          0x080001e8       0x40 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -1317,296 +1317,297 @@ LOAD c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m
  .text.LCD_ShowString
                 0x080085e0       0x9c CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
                 0x080085e0                LCD_ShowString
- .text.main     0x0800867c       0x40 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+ .text.main     0x0800867c       0xa4 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
                 0x0800867c                main
  .text.SystemClock_Config
-                0x080086bc       0x8a CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
-                0x080086bc                SystemClock_Config
- *fill*         0x08008746        0x2 
+                0x08008720       0x8a CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                0x08008720                SystemClock_Config
+ *fill*         0x080087aa        0x2 
  .text.send_message_invoke
-                0x08008748       0x28 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
-                0x08008748                send_message_invoke
+                0x080087ac       0x28 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                0x080087ac                send_message_invoke
  .text.update_screen
-                0x08008770      0x188 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
-                0x08008770                update_screen
+                0x080087d4      0x188 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                0x080087d4                update_screen
  .text.HAL_UART_RxCpltCallback
-                0x080088f8       0x74 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
-                0x080088f8                HAL_UART_RxCpltCallback
+                0x0800895c       0x74 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                0x0800895c                HAL_UART_RxCpltCallback
  .text.HAL_GPIO_EXTI_Callback
-                0x0800896c       0xe8 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
-                0x0800896c                HAL_GPIO_EXTI_Callback
+                0x080089d0       0xe8 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                0x080089d0                HAL_GPIO_EXTI_Callback
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08008a54       0x54 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
-                0x08008a54                HAL_TIM_PeriodElapsedCallback
+                0x08008ab8       0x58 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                0x08008ab8                HAL_TIM_PeriodElapsedCallback
  .text.Error_Handler
-                0x08008aa8        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
-                0x08008aa8                Error_Handler
+                0x08008b10        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                0x08008b10                Error_Handler
  .text.HAL_MspInit
-                0x08008ab4       0x64 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
-                0x08008ab4                HAL_MspInit
+                0x08008b1c       0x64 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+                0x08008b1c                HAL_MspInit
  .text.NMI_Handler
-                0x08008b18        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b18                NMI_Handler
+                0x08008b80        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008b80                NMI_Handler
  .text.HardFault_Handler
-                0x08008b24        0x6 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b24                HardFault_Handler
+                0x08008b8c        0x6 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008b8c                HardFault_Handler
  .text.MemManage_Handler
-                0x08008b2a        0x6 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b2a                MemManage_Handler
+                0x08008b92        0x6 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008b92                MemManage_Handler
  .text.BusFault_Handler
-                0x08008b30        0x6 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b30                BusFault_Handler
+                0x08008b98        0x6 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008b98                BusFault_Handler
  .text.UsageFault_Handler
-                0x08008b36        0x6 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b36                UsageFault_Handler
+                0x08008b9e        0x6 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008b9e                UsageFault_Handler
  .text.SVC_Handler
-                0x08008b3c        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b3c                SVC_Handler
+                0x08008ba4        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008ba4                SVC_Handler
  .text.DebugMon_Handler
-                0x08008b48        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b48                DebugMon_Handler
+                0x08008bb0        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008bb0                DebugMon_Handler
  .text.PendSV_Handler
-                0x08008b54        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b54                PendSV_Handler
+                0x08008bbc        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008bbc                PendSV_Handler
  .text.SysTick_Handler
-                0x08008b60        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b60                SysTick_Handler
+                0x08008bc8        0xc CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008bc8                SysTick_Handler
  .text.EXTI0_IRQHandler
-                0x08008b6c        0xe CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b6c                EXTI0_IRQHandler
+                0x08008bd4        0xe CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008bd4                EXTI0_IRQHandler
  .text.EXTI9_5_IRQHandler
-                0x08008b7a        0xe CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b7a                EXTI9_5_IRQHandler
+                0x08008be2        0xe CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008be2                EXTI9_5_IRQHandler
  .text.TIM3_IRQHandler
-                0x08008b88       0x14 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b88                TIM3_IRQHandler
+                0x08008bf0       0x14 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008bf0                TIM3_IRQHandler
  .text.USART1_IRQHandler
-                0x08008b9c       0x14 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008b9c                USART1_IRQHandler
+                0x08008c04       0x14 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008c04                USART1_IRQHandler
  .text.EXTI15_10_IRQHandler
-                0x08008bb0       0x10 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
-                0x08008bb0                EXTI15_10_IRQHandler
- .text._sbrk    0x08008bc0       0x58 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
-                0x08008bc0                _sbrk
+                0x08008c18       0x10 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+                0x08008c18                EXTI15_10_IRQHandler
+ .text._sbrk    0x08008c28       0x58 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
+                0x08008c28                _sbrk
  .text.SystemInit
-                0x08008c18       0x68 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
-                0x08008c18                SystemInit
+                0x08008c80       0x68 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
+                0x08008c80                SystemInit
  .text.MX_TIM3_Init
-                0x08008c80       0x9c CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
-                0x08008c80                MX_TIM3_Init
+                0x08008ce8       0x9c CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
+                0x08008ce8                MX_TIM3_Init
  .text.HAL_TIM_Base_MspInit
-                0x08008d1c       0x4c CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
-                0x08008d1c                HAL_TIM_Base_MspInit
+                0x08008d84       0x4c CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
+                0x08008d84                HAL_TIM_Base_MspInit
  .text.MX_USART1_UART_Init
-                0x08008d68       0x54 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
-                0x08008d68                MX_USART1_UART_Init
+                0x08008dd0       0x54 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
+                0x08008dd0                MX_USART1_UART_Init
  .text.HAL_UART_MspInit
-                0x08008dbc       0xa8 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
-                0x08008dbc                HAL_UART_MspInit
+                0x08008e24       0xa8 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
+                0x08008e24                HAL_UART_MspInit
  .text.Reset_Handler
-                0x08008e64       0x48 CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj
-                0x08008e64                Reset_Handler
+                0x08008ecc       0x48 CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj
+                0x08008ecc                Reset_Handler
  .text.Default_Handler
-                0x08008eac        0x2 CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj
-                0x08008eac                RTC_Alarm_IRQHandler
-                0x08008eac                EXTI2_IRQHandler
-                0x08008eac                TIM8_TRG_COM_IRQHandler
-                0x08008eac                TIM8_CC_IRQHandler
-                0x08008eac                TIM1_CC_IRQHandler
-                0x08008eac                TIM6_IRQHandler
-                0x08008eac                PVD_IRQHandler
-                0x08008eac                SDIO_IRQHandler
-                0x08008eac                EXTI3_IRQHandler
-                0x08008eac                I2C2_EV_IRQHandler
-                0x08008eac                ADC1_2_IRQHandler
-                0x08008eac                SPI1_IRQHandler
-                0x08008eac                TAMPER_IRQHandler
-                0x08008eac                TIM8_UP_IRQHandler
-                0x08008eac                DMA2_Channel2_IRQHandler
-                0x08008eac                DMA1_Channel4_IRQHandler
-                0x08008eac                USART3_IRQHandler
-                0x08008eac                RTC_IRQHandler
-                0x08008eac                DMA1_Channel7_IRQHandler
-                0x08008eac                CAN1_RX1_IRQHandler
-                0x08008eac                UART5_IRQHandler
-                0x08008eac                ADC3_IRQHandler
-                0x08008eac                TIM4_IRQHandler
-                0x08008eac                DMA2_Channel1_IRQHandler
-                0x08008eac                I2C1_EV_IRQHandler
-                0x08008eac                DMA1_Channel6_IRQHandler
-                0x08008eac                UART4_IRQHandler
-                0x08008eac                RCC_IRQHandler
-                0x08008eac                TIM1_TRG_COM_IRQHandler
-                0x08008eac                DMA1_Channel1_IRQHandler
-                0x08008eac                Default_Handler
-                0x08008eac                TIM7_IRQHandler
-                0x08008eac                TIM5_IRQHandler
-                0x08008eac                SPI2_IRQHandler
-                0x08008eac                DMA1_Channel5_IRQHandler
-                0x08008eac                EXTI4_IRQHandler
-                0x08008eac                USB_LP_CAN1_RX0_IRQHandler
-                0x08008eac                USB_HP_CAN1_TX_IRQHandler
-                0x08008eac                DMA1_Channel3_IRQHandler
-                0x08008eac                FSMC_IRQHandler
-                0x08008eac                TIM1_UP_IRQHandler
-                0x08008eac                WWDG_IRQHandler
-                0x08008eac                TIM2_IRQHandler
-                0x08008eac                TIM1_BRK_IRQHandler
-                0x08008eac                EXTI1_IRQHandler
-                0x08008eac                DMA2_Channel4_5_IRQHandler
-                0x08008eac                USART2_IRQHandler
-                0x08008eac                I2C2_ER_IRQHandler
-                0x08008eac                DMA1_Channel2_IRQHandler
-                0x08008eac                TIM8_BRK_IRQHandler
-                0x08008eac                CAN1_SCE_IRQHandler
-                0x08008eac                FLASH_IRQHandler
-                0x08008eac                SPI3_IRQHandler
-                0x08008eac                I2C1_ER_IRQHandler
-                0x08008eac                USBWakeUp_IRQHandler
-                0x08008eac                DMA2_Channel3_IRQHandler
- *fill*         0x08008eae        0x2 
- .text.__errno  0x08008eb0        0xc c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-errno.o)
-                0x08008eb0                __errno
+                0x08008f14        0x2 CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj
+                0x08008f14                RTC_Alarm_IRQHandler
+                0x08008f14                EXTI2_IRQHandler
+                0x08008f14                TIM8_TRG_COM_IRQHandler
+                0x08008f14                TIM8_CC_IRQHandler
+                0x08008f14                TIM1_CC_IRQHandler
+                0x08008f14                TIM6_IRQHandler
+                0x08008f14                PVD_IRQHandler
+                0x08008f14                SDIO_IRQHandler
+                0x08008f14                EXTI3_IRQHandler
+                0x08008f14                I2C2_EV_IRQHandler
+                0x08008f14                ADC1_2_IRQHandler
+                0x08008f14                SPI1_IRQHandler
+                0x08008f14                TAMPER_IRQHandler
+                0x08008f14                TIM8_UP_IRQHandler
+                0x08008f14                DMA2_Channel2_IRQHandler
+                0x08008f14                DMA1_Channel4_IRQHandler
+                0x08008f14                USART3_IRQHandler
+                0x08008f14                RTC_IRQHandler
+                0x08008f14                DMA1_Channel7_IRQHandler
+                0x08008f14                CAN1_RX1_IRQHandler
+                0x08008f14                UART5_IRQHandler
+                0x08008f14                ADC3_IRQHandler
+                0x08008f14                TIM4_IRQHandler
+                0x08008f14                DMA2_Channel1_IRQHandler
+                0x08008f14                I2C1_EV_IRQHandler
+                0x08008f14                DMA1_Channel6_IRQHandler
+                0x08008f14                UART4_IRQHandler
+                0x08008f14                RCC_IRQHandler
+                0x08008f14                TIM1_TRG_COM_IRQHandler
+                0x08008f14                DMA1_Channel1_IRQHandler
+                0x08008f14                Default_Handler
+                0x08008f14                TIM7_IRQHandler
+                0x08008f14                TIM5_IRQHandler
+                0x08008f14                SPI2_IRQHandler
+                0x08008f14                DMA1_Channel5_IRQHandler
+                0x08008f14                EXTI4_IRQHandler
+                0x08008f14                USB_LP_CAN1_RX0_IRQHandler
+                0x08008f14                USB_HP_CAN1_TX_IRQHandler
+                0x08008f14                DMA1_Channel3_IRQHandler
+                0x08008f14                FSMC_IRQHandler
+                0x08008f14                TIM1_UP_IRQHandler
+                0x08008f14                WWDG_IRQHandler
+                0x08008f14                TIM2_IRQHandler
+                0x08008f14                TIM1_BRK_IRQHandler
+                0x08008f14                EXTI1_IRQHandler
+                0x08008f14                DMA2_Channel4_5_IRQHandler
+                0x08008f14                USART2_IRQHandler
+                0x08008f14                I2C2_ER_IRQHandler
+                0x08008f14                DMA1_Channel2_IRQHandler
+                0x08008f14                TIM8_BRK_IRQHandler
+                0x08008f14                CAN1_SCE_IRQHandler
+                0x08008f14                FLASH_IRQHandler
+                0x08008f14                SPI3_IRQHandler
+                0x08008f14                I2C1_ER_IRQHandler
+                0x08008f14                USBWakeUp_IRQHandler
+                0x08008f14                DMA2_Channel3_IRQHandler
+ *fill*         0x08008f16        0x2 
+ .text.__errno  0x08008f18        0xc c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-errno.o)
+                0x08008f18                __errno
  .text.__libc_init_array
-                0x08008ebc       0x48 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-init.o)
-                0x08008ebc                __libc_init_array
- .text.memset   0x08008f04       0x10 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memset.o)
-                0x08008f04                memset
- .text.sprintf  0x08008f14       0x40 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-sprintf.o)
-                0x08008f14                siprintf
-                0x08008f14                sprintf
+                0x08008f24       0x48 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-init.o)
+                0x08008f24                __libc_init_array
+ .text.memset   0x08008f6c       0x10 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memset.o)
+                0x08008f6c                memset
+ .text.sprintf  0x08008f7c       0x40 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-sprintf.o)
+                0x08008f7c                siprintf
+                0x08008f7c                sprintf
  .text.__ssputs_r
-                0x08008f54       0xb6 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-svfprintf.o)
-                0x08008f54                __ssputs_r
- *fill*         0x0800900a        0x2 
+                0x08008fbc       0xb6 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x08008fbc                __ssputs_r
+ *fill*         0x08009072        0x2 
  .text._svfprintf_r
-                0x0800900c      0x1f0 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-svfprintf.o)
-                0x0800900c                _svfiprintf_r
-                0x0800900c                _svfprintf_r
+                0x08009074      0x1f0 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x08009074                _svfiprintf_r
+                0x08009074                _svfprintf_r
  .text._printf_common
-                0x080091fc       0xec c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x080091fc                _printf_common
+                0x08009264       0xec c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08009264                _printf_common
  .text._printf_i
-                0x080092e8      0x22c c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x080092e8                _printf_i
- .text.memchr   0x08009514       0x1c c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memchr-stub.o)
-                0x08009514                memchr
- .text.memcpy   0x08009530       0x1c c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
-                0x08009530                memcpy
- .text.memmove  0x0800954c       0x34 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memmove.o)
-                0x0800954c                memmove
- .text._free_r  0x08009580       0x98 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-freer.o)
-                0x08009580                _free_r
+                0x08009350      0x22c c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08009350                _printf_i
+ .text.memchr   0x0800957c       0x1c c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memchr-stub.o)
+                0x0800957c                memchr
+ .text.memcpy   0x08009598       0x1c c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memcpy-stub.o)
+                0x08009598                memcpy
+ .text.memmove  0x080095b4       0x34 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-memmove.o)
+                0x080095b4                memmove
+ .text._free_r  0x080095e8       0x98 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-freer.o)
+                0x080095e8                _free_r
  .text._malloc_r
-                0x08009618       0xb4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
-                0x08009618                _malloc_r
+                0x08009680       0xb4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x08009680                _malloc_r
  .text._realloc_r
-                0x080096cc       0x4c c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-reallocr.o)
-                0x080096cc                _realloc_r
- .text._sbrk_r  0x08009718       0x20 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-sbrkr.o)
-                0x08009718                _sbrk_r
+                0x08009734       0x4c c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-reallocr.o)
+                0x08009734                _realloc_r
+ .text._sbrk_r  0x08009780       0x20 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-sbrkr.o)
+                0x08009780                _sbrk_r
  .text.__malloc_lock
-                0x08009738        0xc c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-mlock.o)
-                0x08009738                __malloc_lock
+                0x080097a0        0xc c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-mlock.o)
+                0x080097a0                __malloc_lock
  .text.__malloc_unlock
-                0x08009744        0xc c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-mlock.o)
-                0x08009744                __malloc_unlock
+                0x080097ac        0xc c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-mlock.o)
+                0x080097ac                __malloc_unlock
  .text._malloc_usable_size_r
-                0x08009750       0x10 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-msizer.o)
-                0x08009750                _malloc_usable_size_r
+                0x080097b8       0x10 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-msizer.o)
+                0x080097b8                _malloc_usable_size_r
  .text.__retarget_lock_acquire_recursive
-                0x08009760        0x2 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-lock.o)
-                0x08009760                __retarget_lock_acquire_recursive
+                0x080097c8        0x2 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-lock.o)
+                0x080097c8                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x08009762        0x2 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-lock.o)
-                0x08009762                __retarget_lock_release_recursive
+                0x080097ca        0x2 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-lock.o)
+                0x080097ca                __retarget_lock_release_recursive
  *(.glue_7)
- .glue_7        0x08009764        0x0 linker stubs
+ .glue_7        0x080097cc        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08009764        0x0 linker stubs
+ .glue_7t       0x080097cc        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08009764        0x0 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x080097cc        0x0 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x08009764        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crti.o
-                0x08009764                _init
- .init          0x08009768        0x8 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x080097cc        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crti.o
+                0x080097cc                _init
+ .init          0x080097d0        0x8 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x08009770        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crti.o
-                0x08009770                _fini
- .fini          0x08009774        0x8 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtn.o
-                0x0800977c                . = ALIGN (0x4)
-                0x0800977c                _etext = .
+ .fini          0x080097d8        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crti.o
+                0x080097d8                _fini
+ .fini          0x080097dc        0x8 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtn.o
+                0x080097e4                . = ALIGN (0x4)
+                0x080097e4                _etext = .
 
-.vfp11_veneer   0x0800977c        0x0
- .vfp11_veneer  0x0800977c        0x0 linker stubs
+.vfp11_veneer   0x080097e4        0x0
+ .vfp11_veneer  0x080097e4        0x0 linker stubs
 
-.v4_bx          0x0800977c        0x0
- .v4_bx         0x0800977c        0x0 linker stubs
+.v4_bx          0x080097e4        0x0
+ .v4_bx         0x080097e4        0x0 linker stubs
 
-.iplt           0x0800977c        0x0
- .iplt          0x0800977c        0x0 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x080097e4        0x0
+ .iplt          0x080097e4        0x0 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x0800977c     0x1864
-                0x0800977c                . = ALIGN (0x4)
+.rodata         0x080097e4     0x186c
+                0x080097e4                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0800977c       0x12 CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
- *fill*         0x0800978e        0x2 
- .rodata        0x08009790       0x44 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+ .rodata        0x080097e4       0x12 CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj
+ *fill*         0x080097f6        0x2 
+ .rodata        0x080097f8       0x4b CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
  *(.rodata*)
+ *fill*         0x08009843        0x1 
  .rodata.asc2_1206
-                0x080097d4      0x474 CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
-                0x080097d4                asc2_1206
+                0x08009844      0x474 CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
+                0x08009844                asc2_1206
  .rodata.asc2_1608
-                0x08009c48      0x5f0 CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
-                0x08009c48                asc2_1608
+                0x08009cb8      0x5f0 CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
+                0x08009cb8                asc2_1608
  .rodata.asc2_2412
-                0x0800a238      0xd5c CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
-                0x0800a238                asc2_2412
+                0x0800a2a8      0xd5c CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
+                0x0800a2a8                asc2_2412
  .rodata.AHBPrescTable
-                0x0800af94       0x10 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
-                0x0800af94                AHBPrescTable
+                0x0800b004       0x10 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
+                0x0800b004                AHBPrescTable
  .rodata.APBPrescTable
-                0x0800afa4        0x8 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
-                0x0800afa4                APBPrescTable
+                0x0800b014        0x8 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
+                0x0800b014                APBPrescTable
  .rodata._svfprintf_r.str1.1
-                0x0800afac       0x11 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-svfprintf.o)
+                0x0800b01c       0x11 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-svfprintf.o)
  .rodata._printf_i.str1.1
-                0x0800afbd       0x22 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0800afe0                . = ALIGN (0x4)
- *fill*         0x0800afdf        0x1 
+                0x0800b02d       0x22 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0800b050                . = ALIGN (0x4)
+ *fill*         0x0800b04f        0x1 
 
-.rel.dyn        0x0800afe0        0x0
- .rel.iplt      0x0800afe0        0x0 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x0800b050        0x0
+ .rel.iplt      0x0800b050        0x0 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0800afe0        0x0
-                0x0800afe0                __exidx_start = .
+.ARM            0x0800b050        0x0
+                0x0800b050                __exidx_start = .
  *(.ARM.exidx*)
-                0x0800afe0                __exidx_end = .
+                0x0800b050                __exidx_end = .
 
-.preinit_array  0x0800afe0        0x0
-                0x0800afe0                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800b050        0x0
+                0x0800b050                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800afe0                PROVIDE (__preinit_array_end = .)
+                0x0800b050                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0800afe0        0x4
-                0x0800afe0                PROVIDE (__init_array_start = .)
+.init_array     0x0800b050        0x4
+                0x0800b050                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800afe0        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x0800afe4                PROVIDE (__init_array_end = .)
+ .init_array    0x0800b050        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0800b054                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0800afe4        0x4
+.fini_array     0x0800b054        0x4
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800afe4        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x0800b054        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end = .)
-                0x0800afe8                _sidata = LOADADDR (.data)
+                0x0800b058                _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x74 load address 0x0800afe8
+.data           0x20000000       0x74 load address 0x0800b058
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -1636,11 +1637,11 @@ LOAD c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m
                 0x20000074                . = ALIGN (0x4)
                 0x20000074                _edata = .
 
-.igot.plt       0x20000074        0x0 load address 0x0800b05c
+.igot.plt       0x20000074        0x0 load address 0x0800b0cc
  .igot.plt      0x20000074        0x0 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x20000074                . = ALIGN (0x4)
 
-.bss            0x20000074      0x59c load address 0x0800b05c
+.bss            0x20000074      0x5b4 load address 0x0800b0cc
                 0x20000074                _sbss = .
                 0x20000074                __bss_start__ = _sbss
  *(.bss)
@@ -1659,51 +1660,57 @@ LOAD c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m
                 0x200000a8                rxBuffer
  .bss.msg       0x2000010c       0x64 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
                 0x2000010c                msg
- .bss.uLength.7991
-                0x20000170        0x1 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
- *fill*         0x20000171        0x3 
- .bss.uRx_Data.7990
-                0x20000174      0x400 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+ .bss.time_text
+                0x20000170       0x14 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                0x20000170                time_text
+ .bss.time_in_sec
+                0x20000184        0x4 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                0x20000184                time_in_sec
+ .bss.uLength.7993
+                0x20000188        0x1 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+ *fill*         0x20000189        0x3 
+ .bss.uRx_Data.7992
+                0x2000018c      0x400 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
  .bss.heap_end.6069
-                0x20000574        0x4 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
- .bss.htim3     0x20000578       0x40 CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
-                0x20000578                htim3
- .bss.huart1    0x200005b8       0x40 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
-                0x200005b8                huart1
+                0x2000058c        0x4 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
+ .bss.htim3     0x20000590       0x40 CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
+                0x20000590                htim3
+ .bss.huart1    0x200005d0       0x40 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
+                0x200005d0                huart1
  .bss.__malloc_free_list
-                0x200005f8        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
-                0x200005f8                __malloc_free_list
+                0x20000610        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x20000610                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x200005fc        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
-                0x200005fc                __malloc_sbrk_start
+                0x20000614        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x20000614                __malloc_sbrk_start
  *(COMMON)
- COMMON         0x20000600        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-reent.o)
-                0x20000600                errno
- COMMON         0x20000604        0x9 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-lock.o)
-                0x20000604                __lock___atexit_recursive_mutex
-                0x20000605                __lock___arc4random_mutex
-                0x20000606                __lock___env_recursive_mutex
-                0x20000607                __lock___sinit_recursive_mutex
-                0x20000608                __lock___malloc_recursive_mutex
-                0x20000609                __lock___at_quick_exit_mutex
-                0x2000060a                __lock___dd_hash_mutex
-                0x2000060b                __lock___tz_mutex
-                0x2000060c                __lock___sfp_recursive_mutex
-                0x20000610                . = ALIGN (0x4)
- *fill*         0x2000060d        0x3 
-                0x20000610                _ebss = .
-                0x20000610                __bss_end__ = _ebss
+ COMMON         0x20000618        0x4 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-reent.o)
+                0x20000618                errno
+ COMMON         0x2000061c        0x9 c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libg_nano.a(lib_a-lock.o)
+                0x2000061c                __lock___atexit_recursive_mutex
+                0x2000061d                __lock___arc4random_mutex
+                0x2000061e                __lock___env_recursive_mutex
+                0x2000061f                __lock___sinit_recursive_mutex
+                0x20000620                __lock___malloc_recursive_mutex
+                0x20000621                __lock___at_quick_exit_mutex
+                0x20000622                __lock___dd_hash_mutex
+                0x20000623                __lock___tz_mutex
+                0x20000624                __lock___sfp_recursive_mutex
+                0x20000628                . = ALIGN (0x4)
+ *fill*         0x20000625        0x3 
+                0x20000628                _ebss = .
+                0x20000628                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000610      0x600 load address 0x0800b05c
-                0x20000610                . = ALIGN (0x8)
-                0x20000610                PROVIDE (end = .)
+                0x20000628      0x600 load address 0x0800b0cc
+                0x20000628                . = ALIGN (0x8)
+                0x20000628                PROVIDE (end = .)
                 [!provide]                PROVIDE (_end = .)
-                0x20000810                . = (. + _Min_Heap_Size)
- *fill*         0x20000610      0x200 
-                0x20000c10                . = (. + _Min_Stack_Size)
- *fill*         0x20000810      0x400 
-                0x20000c10                . = ALIGN (0x8)
+                0x20000828                . = (. + _Min_Heap_Size)
+ *fill*         0x20000628      0x200 
+                0x20000c28                . = (. + _Min_Stack_Size)
+ *fill*         0x20000828      0x400 
+                0x20000c28                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -1801,7 +1808,7 @@ LOAD c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m
                 0x00000700       0x1d c:/progra~2/gnutoo~1/82019-~1/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7-m/nofp/crtn.o
 OUTPUT(CS301ProjectClock.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xdd14
+.debug_info     0x00000000     0xdd3a
  .debug_info    0x00000000      0x7ad CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_info    0x000007ad      0xc2b CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_info    0x000013d8      0x807 CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -1812,15 +1819,15 @@ OUTPUT(CS301ProjectClock.elf elf32-littlearm)
  .debug_info    0x00006394     0x12db CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_info    0x0000766f      0x525 CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.obj
  .debug_info    0x00007b94     0x17b4 CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
- .debug_info    0x00009348     0x1553 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
- .debug_info    0x0000a89b      0x2e5 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_info    0x0000ab80      0x97d CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_info    0x0000b4fd     0x100f CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
- .debug_info    0x0000c50c      0x462 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_info    0x0000c96e      0x9dd CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
- .debug_info    0x0000d34b      0x9c9 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
+ .debug_info    0x00009348     0x1579 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+ .debug_info    0x0000a8c1      0x2e5 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_info    0x0000aba6      0x97d CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_info    0x0000b523     0x100f CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
+ .debug_info    0x0000c532      0x462 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_info    0x0000c994      0x9dd CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
+ .debug_info    0x0000d371      0x9c9 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
 
-.debug_abbrev   0x00000000     0x2419
+.debug_abbrev   0x00000000     0x2410
  .debug_abbrev  0x00000000      0x1fd CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_abbrev  0x000001fd      0x310 CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_abbrev  0x0000050d      0x225 CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -1831,13 +1838,13 @@ OUTPUT(CS301ProjectClock.elf elf32-littlearm)
  .debug_abbrev  0x0000102b      0x26d CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_abbrev  0x00001298      0x154 CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.obj
  .debug_abbrev  0x000013ec      0x352 CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
- .debug_abbrev  0x0000173e      0x2c7 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
- .debug_abbrev  0x00001a05      0x11a CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_abbrev  0x00001b1f      0x18d CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_abbrev  0x00001cac      0x2a9 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
- .debug_abbrev  0x00001f55      0x14b CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_abbrev  0x000020a0      0x1b8 CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
- .debug_abbrev  0x00002258      0x1c1 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
+ .debug_abbrev  0x0000173e      0x2be CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+ .debug_abbrev  0x000019fc      0x11a CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_abbrev  0x00001b16      0x18d CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_abbrev  0x00001ca3      0x2a9 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
+ .debug_abbrev  0x00001f4c      0x14b CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_abbrev  0x00002097      0x1b8 CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
+ .debug_abbrev  0x0000224f      0x1c1 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
 
 .debug_aranges  0x00000000      0xd80
  .debug_aranges
@@ -1894,7 +1901,7 @@ OUTPUT(CS301ProjectClock.elf elf32-littlearm)
  .debug_ranges  0x00000c30       0x20 CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
  .debug_ranges  0x00000c50       0x20 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
 
-.debug_line     0x00000000     0xa56d
+.debug_line     0x00000000     0xa597
  .debug_line    0x00000000      0x516 CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
  .debug_line    0x00000516      0x6f0 CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
  .debug_line    0x00000c06      0xe6c CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
@@ -1905,15 +1912,15 @@ OUTPUT(CS301ProjectClock.elf elf32-littlearm)
  .debug_line    0x00005ceb     0x133e CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
  .debug_line    0x00007029      0x298 CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.obj
  .debug_line    0x000072c1     0x193a CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
- .debug_line    0x00008bfb      0x5a6 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
- .debug_line    0x000091a1      0x24c CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
- .debug_line    0x000093ed      0x3ca CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
- .debug_line    0x000097b7      0x43c CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
- .debug_line    0x00009bf3      0x2ff CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
- .debug_line    0x00009ef2      0x32f CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
- .debug_line    0x0000a221      0x34c CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
+ .debug_line    0x00008bfb      0x5d0 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+ .debug_line    0x000091cb      0x24c CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_line    0x00009417      0x3ca CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_line    0x000097e1      0x43c CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
+ .debug_line    0x00009c1d      0x2ff CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_line    0x00009f1c      0x32f CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
+ .debug_line    0x0000a24b      0x34c CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
 
-.debug_str      0x00000000     0x404b
+.debug_str      0x00000000     0x4061
  .debug_str     0x00000000      0x8fb CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
                                 0x964 (size before relaxing)
  .debug_str     0x000008fb      0x436 CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
@@ -1934,19 +1941,19 @@ OUTPUT(CS301ProjectClock.elf elf32-littlearm)
                                 0x749 (size before relaxing)
  .debug_str     0x0000338f      0x6ff CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
                                 0xa9d (size before relaxing)
- .debug_str     0x00003a8e       0xbb CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
-                                0xefa (size before relaxing)
- .debug_str     0x00003b49       0x47 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
+ .debug_str     0x00003a8e       0xd1 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
+                                0xf10 (size before relaxing)
+ .debug_str     0x00003b5f       0x47 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
                                 0x352 (size before relaxing)
- .debug_str     0x00003b90      0x12d CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
+ .debug_str     0x00003ba6      0x12d CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
                                 0x93b (size before relaxing)
- .debug_str     0x00003cbd      0x266 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
+ .debug_str     0x00003cd3      0x266 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj
                                 0x89e (size before relaxing)
- .debug_str     0x00003f23       0x79 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
+ .debug_str     0x00003f39       0x79 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj
                                 0x3a7 (size before relaxing)
- .debug_str     0x00003f9c       0x55 CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
+ .debug_str     0x00003fb2       0x55 CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj
                                 0xb92 (size before relaxing)
- .debug_str     0x00003ff1       0x5a CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
+ .debug_str     0x00004007       0x5a CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
                                 0xb13 (size before relaxing)
 
 .comment        0x00000000       0x76

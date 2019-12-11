@@ -51,6 +51,7 @@
 uint8_t rxBuffer[100];
 char msg[100];
 char time_text[20];
+uint32_t time_in_sec=0;
 uint8_t currentBackground = 6;
 /* USER CODE END PV */
 
@@ -105,10 +106,15 @@ int main(void)
   /* USER CODE BEGIN WHILE */
     uint8_t y = 0;
     char m[20];
+    sprintf(time_text, " ");
     while (1)
   {
     /* USER CODE END WHILE */
-
+        sprintf(m, "hello, y=%d", y++);
+      POINT_COLOR = BLACK;
+      LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) "        ");
+      LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) time_text);
+      HAL_Delay(500);
     /* USER CODE BEGIN 3 */
 
   }
@@ -285,7 +291,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
     if(htim->Instance==TIM3){
-        LCD_ShowString(30, 400, 200, 24, 24, (uint8_t*) "Mini STM32 ^_^");
+        sprintf(time_text, "sec=%d", time_in_sec);
+        time_in_sec++;
+
+        sprintf(msg, "sec=%d", time_in_sec);
+        send_message_invoke();
     }
 }
 
