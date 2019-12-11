@@ -98,7 +98,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+//    HAL_GPIO_TogglePin()
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -161,6 +161,34 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     }
     HAL_UART_Receive_IT(&huart1, (uint8_t *)rxBuffer, 1);
 }
+
+
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    HAL_Delay(100);
+    switch (GPIO_Pin) {
+        case KEY0_Pin:
+            if (HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) == GPIO_PIN_RESET) {
+                HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
+            }
+            break;
+        case KEY1_Pin:
+            if (HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin) == GPIO_PIN_RESET) {
+                HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+            }
+            break;
+        case KEY_WK_Pin:
+            if (HAL_GPIO_ReadPin(KEY_WK_GPIO_Port, KEY_WK_Pin) == GPIO_PIN_SET) {
+                HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
+                HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+            }
+            break;
+        default:
+            break;
+    }
+}
+
 /* USER CODE END 4 */
 
 /**
