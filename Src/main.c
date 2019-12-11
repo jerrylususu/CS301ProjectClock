@@ -20,6 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -49,6 +50,7 @@
 /* USER CODE BEGIN PV */
 uint8_t rxBuffer[100];
 char msg[100];
+char time_text[20];
 uint8_t currentBackground = 6;
 /* USER CODE END PV */
 
@@ -93,8 +95,10 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART1_UART_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-  HAL_UART_Receive_IT(&huart1, (uint8_t *)rxBuffer, 1);
+    HAL_TIM_Base_Start_IT(&htim3);
+    HAL_UART_Receive_IT(&huart1, (uint8_t *)rxBuffer, 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -104,15 +108,7 @@ int main(void)
     while (1)
   {
     /* USER CODE END WHILE */
-      LCD_ShowString(30, 200, 200, 16, 16, (uint8_t*) "           ");
 
-      y++;
-      sprintf(m, "y=%d", y);
-
-      sprintf(msg, "trying to print y=%d\r\n",y);
-      HAL_UART_Transmit(&huart1, (uint8_t *) msg, strlen(msg), HAL_MAX_DELAY);
-      LCD_ShowString(30, 200, 200, 16, 16, (uint8_t*) m);
-      HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
 
   }
@@ -287,7 +283,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     send_message_invoke();
 }
 
-
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+    if(htim->Instance==TIM3){
+        LCD_ShowString(30, 400, 200, 24, 24, (uint8_t*) "Mini STM32 ^_^");
+    }
+}
 
 /* USER CODE END 4 */
 

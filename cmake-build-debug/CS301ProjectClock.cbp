@@ -39,10 +39,10 @@
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
 					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Inc"/>
-					<Add directory="C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc"/>
-					<Add directory="C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
-					<Add directory="C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/CMSIS/Include"/>
 					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1"/>
 					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi"/>
 					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward"/>
@@ -69,10 +69,10 @@
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xE"/>
 					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Inc"/>
-					<Add directory="C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc"/>
-					<Add directory="C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
-					<Add directory="C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/CMSIS/Include"/>
 					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1"/>
 					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/arm-none-eabi"/>
 					<Add directory="c:\program files (x86)\gnu tools arm embedded\8 2019-q3-update\bin\../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/include/c++/8.3.1/backward"/>
@@ -288,6 +288,9 @@
 			<Option target="CS301ProjectClock.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/system_stm32f1xx.c">
+			<Option target="CS301ProjectClock.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/tim.c">
 			<Option target="CS301ProjectClock.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/usart.c">

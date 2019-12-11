@@ -20,10 +20,10 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Inc"
-  "C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc"
-  "C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
-  "C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
-  "C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include"
+  "../Drivers/STM32F1xx_HAL_Driver/Inc"
+  "../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+  "../Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+  "../Drivers/CMSIS/Include"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
@@ -48,6 +48,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/sys.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/sys.c.obj"
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/syscalls.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj"
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/system_stm32f1xx.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj"
+  "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/tim.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj"
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/usart.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
@@ -63,10 +64,10 @@ set(CMAKE_TARGET_DEFINITIONS_C
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Inc"
-  "C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc"
-  "C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
-  "C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
-  "C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include"
+  "../Drivers/STM32F1xx_HAL_Driver/Inc"
+  "../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
+  "../Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+  "../Drivers/CMSIS/Include"
   )
 
 # Targets to which this target links.

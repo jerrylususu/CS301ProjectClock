@@ -12,12 +12,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff7d6266-a2ce-4b91-9493-f816a6ceb33e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CS301ProjectClock.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/CS301ProjectClock.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/stm32f1xx_hal_conf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32f1xx_hal_conf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/stm32f1xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/stm32f1xx_it.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/stm32f1xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +69,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Src" />
   </component>
@@ -78,7 +101,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576025583462</updated>
-      <workItem from="1576025609583" duration="3513000" />
+      <workItem from="1576025609583" duration="3950000" />
+      <workItem from="1576077540299" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="add LED base">
       <created>1576027531625</created>
@@ -101,47 +125,60 @@
       <option name="project" value="LOCAL" />
       <updated>1576028820660</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implement display a number every second">
+      <created>1576029492037</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576029492037</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add LED base" />
     <MESSAGE value="add LCD base" />
     <MESSAGE value="implement press key to change background color" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement press key to change background color" />
+    <MESSAGE value="implement display a number every second" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement display a number every second" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576027070657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576027070657" />
-    <state x="519" y="111" key="CommitChangelistDialog2" timestamp="1576028818635">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-3148" y="-917" key="CommitChangelistDialog2" timestamp="1576078277312">
+      <screen x="-3840" y="-1066" width="2560" height="1400" />
     </state>
-    <state x="519" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576028818635" />
+    <state x="-3148" y="-917" key="CommitChangelistDialog2/0.0.1920.1040/-3840.-1066.2560.1400@-3840.-1066.2560.1400" timestamp="1576078277312" />
+    <state x="519" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576029490133" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576027019764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576027019764" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1576029108326">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1576031220118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576029108326" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1576029108326">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576031220118" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1576031220118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576029108326" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1576029108325">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576031220118" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1576031220117">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576029108325" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1576029108326">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576031220117" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1576031220118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576029108326" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576031220118" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576028065960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576028065960" />
+    <state x="-2257" y="-751" width="672" height="678" key="search.everywhere.popup" timestamp="1576077796259">
+      <screen x="-3840" y="-1066" width="2560" height="1400" />
+    </state>
+    <state x="-2257" y="-751" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-3840.-1066.2560.1400@-3840.-1066.2560.1400" timestamp="1576077796259" />
   </component>
 </project>

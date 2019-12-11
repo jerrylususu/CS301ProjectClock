@@ -21,6 +21,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CS301ProjectClock.elf.dir/Src/sys.c.obj"
   "CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj"
   "CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj"
+  "CMakeFiles/CS301ProjectClock.elf.dir/Src/tim.c.obj"
   "CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj"
   "CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj"
   "CS301ProjectClock.elf"
