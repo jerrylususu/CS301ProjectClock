@@ -99,11 +99,20 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
+    uint8_t y = 0;
+    char m[20];
     while (1)
   {
     /* USER CODE END WHILE */
+      LCD_ShowString(30, 200, 200, 16, 16, (uint8_t*) "           ");
 
+      y++;
+      sprintf(m, "y=%d", y);
+
+      sprintf(msg, "trying to print y=%d\r\n",y);
+      HAL_UART_Transmit(&huart1, (uint8_t *) msg, strlen(msg), HAL_MAX_DELAY);
+      LCD_ShowString(30, 200, 200, 16, 16, (uint8_t*) m);
+      HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
 
   }
