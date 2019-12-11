@@ -26,6 +26,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "lcd.h"
+#include <stdio.h>
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,6 +48,8 @@
 
 /* USER CODE BEGIN PV */
 uint8_t rxBuffer[100];
+char msg[100];
+uint8_t currentBackground = 6;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -95,72 +99,13 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-    uint8_t x = 0;
+
     while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      switch (x) {
-          case 0:
-              LCD_Clear(WHITE);
-              BACK_COLOR = WHITE;
-              break;
-          case 1:
-              LCD_Clear(BLACK);
-              BACK_COLOR = BLACK;
-              break;
-          case 2:
-              LCD_Clear(BLUE);
-              BACK_COLOR = BLUE;
-              break;
-          case 3:
-              LCD_Clear(RED);
-              BACK_COLOR = RED;
-              break;
-          case 4:
-              LCD_Clear(MAGENTA);
-              BACK_COLOR = MAGENTA;
-              break;
-          case 5:
-              LCD_Clear(GREEN);
-              BACK_COLOR = GREEN;
-              break;
-          case 6:
-              LCD_Clear(CYAN);
-              BACK_COLOR = CYAN;
-              break;
-          case 7:
-              LCD_Clear(YELLOW);
-              BACK_COLOR = YELLOW;
-              break;
-          case 8:
-              LCD_Clear(BRRED);
-              BACK_COLOR = BRRED;
-              break;
-          case 9:
-              LCD_Clear(GRAY);
-              BACK_COLOR = GRAY;
-              break;
-          case 10:
-              LCD_Clear(LGRAY);
-              BACK_COLOR = LGRAY;
-              break;
-          case 11:
-              LCD_Clear(BROWN);
-              BACK_COLOR = BROWN;
-              break;
-      }
-      POINT_COLOR = RED;
-      LCD_ShowString(30, 40, 200, 24, 24, (uint8_t*) "Mini STM32 ^_^");
-      LCD_ShowString(30, 70, 200, 16, 16, (uint8_t*) "TFTLCD TEST");
-      POINT_COLOR = BLACK;
-      LCD_DrawRectangle(30, 150, 210, 190);
-      LCD_Fill(31, 151, 209, 189, YELLOW);
-      x++;
-      if (x == 12)
-          x = 0;
-      HAL_Delay(2000);
+
   }
   /* USER CODE END 3 */
 }
@@ -203,6 +148,78 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+// utils
+
+void send_message_invoke(){
+    HAL_UART_Transmit(&huart1, (uint8_t *) msg, strlen(msg), HAL_MAX_DELAY);
+}
+
+void update_screen(){
+    switch (currentBackground) {
+        case 0:
+            LCD_Clear(WHITE);
+            BACK_COLOR = WHITE;
+            break;
+        case 1:
+            LCD_Clear(BLACK);
+            BACK_COLOR = BLACK;
+            break;
+        case 2:
+            LCD_Clear(BLUE);
+            BACK_COLOR = BLUE;
+            break;
+        case 3:
+            LCD_Clear(RED);
+            BACK_COLOR = RED;
+            break;
+        case 4:
+            LCD_Clear(MAGENTA);
+            BACK_COLOR = MAGENTA;
+            break;
+        case 5:
+            LCD_Clear(GREEN);
+            BACK_COLOR = GREEN;
+            break;
+        case 6:
+            LCD_Clear(CYAN);
+            BACK_COLOR = CYAN;
+            break;
+        case 7:
+            LCD_Clear(YELLOW);
+            BACK_COLOR = YELLOW;
+            break;
+        case 8:
+            LCD_Clear(BRRED);
+            BACK_COLOR = BRRED;
+            break;
+        case 9:
+            LCD_Clear(GRAY);
+            BACK_COLOR = GRAY;
+            break;
+        case 10:
+            LCD_Clear(LGRAY);
+            BACK_COLOR = LGRAY;
+            break;
+        case 11:
+            LCD_Clear(BROWN);
+            BACK_COLOR = BROWN;
+            break;
+    }
+    POINT_COLOR = RED;
+    LCD_ShowString(30, 40, 200, 24, 24, (uint8_t*) "Mini STM32 ^_^");
+    LCD_ShowString(30, 70, 200, 16, 16, (uint8_t*) "TFTLCD TEST");
+    POINT_COLOR = BLACK;
+    LCD_DrawRectangle(30, 150, 210, 190);
+    LCD_Fill(31, 151, 209, 189, YELLOW);
+//    x++;
+//    if (x == 12)
+//        x = 0;
+//    HAL_Delay(2000);
+}
+
+// system interrupt handlers & callbacks
+
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     if(huart->Instance==USART1)
@@ -232,11 +249,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
         case KEY0_Pin:
             if (HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) == GPIO_PIN_RESET) {
                 HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
+                currentBackground--;
+                update_screen();
             }
             break;
         case KEY1_Pin:
             if (HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin) == GPIO_PIN_RESET) {
                 HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+                currentBackground++;
+                update_screen();
             }
             break;
         case KEY_WK_Pin:
@@ -248,7 +269,15 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
         default:
             break;
     }
+    if(currentBackground<0){
+        currentBackground += 12;
+    } else if(currentBackground>=12){
+        currentBackground -= 12;
+    }
+    sprintf(msg, "BG: %d\r\n", currentBackground);
+    send_message_invoke();
 }
+
 
 
 /* USER CODE END 4 */

@@ -101,6 +101,10 @@ gpio.h
 C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/gpio.h
 lcd.h
 C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/lcd.h
+stdio.h
+-
+string.h
+-
 
 C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h
 core_cm3.h
