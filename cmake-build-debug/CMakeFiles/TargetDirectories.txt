@@ -1,3 +1,0 @@
-C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir
-C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/edit_cache.dir
