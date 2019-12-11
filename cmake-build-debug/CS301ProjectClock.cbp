@@ -269,6 +269,9 @@
 		<Unit filename="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/gpio.c">
 			<Option target="CS301ProjectClock.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/lcd.c">
+			<Option target="CS301ProjectClock.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/main.c">
 			<Option target="CS301ProjectClock.elf"/>
 		</Unit>

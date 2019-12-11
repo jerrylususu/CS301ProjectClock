@@ -25,7 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "lcd.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -83,7 +83,7 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  LCD_Init();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -95,11 +95,72 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
+    uint8_t x = 0;
+    while (1)
   {
     /* USER CODE END WHILE */
-//    HAL_GPIO_TogglePin()
+
     /* USER CODE BEGIN 3 */
+      switch (x) {
+          case 0:
+              LCD_Clear(WHITE);
+              BACK_COLOR = WHITE;
+              break;
+          case 1:
+              LCD_Clear(BLACK);
+              BACK_COLOR = BLACK;
+              break;
+          case 2:
+              LCD_Clear(BLUE);
+              BACK_COLOR = BLUE;
+              break;
+          case 3:
+              LCD_Clear(RED);
+              BACK_COLOR = RED;
+              break;
+          case 4:
+              LCD_Clear(MAGENTA);
+              BACK_COLOR = MAGENTA;
+              break;
+          case 5:
+              LCD_Clear(GREEN);
+              BACK_COLOR = GREEN;
+              break;
+          case 6:
+              LCD_Clear(CYAN);
+              BACK_COLOR = CYAN;
+              break;
+          case 7:
+              LCD_Clear(YELLOW);
+              BACK_COLOR = YELLOW;
+              break;
+          case 8:
+              LCD_Clear(BRRED);
+              BACK_COLOR = BRRED;
+              break;
+          case 9:
+              LCD_Clear(GRAY);
+              BACK_COLOR = GRAY;
+              break;
+          case 10:
+              LCD_Clear(LGRAY);
+              BACK_COLOR = LGRAY;
+              break;
+          case 11:
+              LCD_Clear(BROWN);
+              BACK_COLOR = BROWN;
+              break;
+      }
+      POINT_COLOR = RED;
+      LCD_ShowString(30, 40, 200, 24, 24, (uint8_t*) "Mini STM32 ^_^");
+      LCD_ShowString(30, 70, 200, 16, 16, (uint8_t*) "TFTLCD TEST");
+      POINT_COLOR = BLACK;
+      LCD_DrawRectangle(30, 150, 210, 190);
+      LCD_Fill(31, 151, 209, 189, YELLOW);
+      x++;
+      if (x == 12)
+          x = 0;
+      HAL_Delay(2000);
   }
   /* USER CODE END 3 */
 }
@@ -188,6 +249,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
             break;
     }
 }
+
 
 /* USER CODE END 4 */
 

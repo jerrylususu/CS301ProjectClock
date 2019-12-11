@@ -251,9 +251,22 @@ CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.s"
 	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\gpio.c -o CMakeFiles\CS301ProjectClock.elf.dir\Src\gpio.c.s
 
+CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj: CMakeFiles/CS301ProjectClock.elf.dir/flags.make
+CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj: ../Src/lcd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj"
+	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS301ProjectClock.elf.dir\Src\lcd.c.obj   -c C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\lcd.c
+
+CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.i"
+	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\lcd.c > CMakeFiles\CS301ProjectClock.elf.dir\Src\lcd.c.i
+
+CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.s"
+	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\lcd.c -o CMakeFiles\CS301ProjectClock.elf.dir\Src\lcd.c.s
+
 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj: CMakeFiles/CS301ProjectClock.elf.dir/flags.make
 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj: ../Src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj"
 	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS301ProjectClock.elf.dir\Src\main.c.obj   -c C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\main.c
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.i: cmake_force
@@ -266,7 +279,7 @@ CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.s: cmake_force
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/CS301ProjectClock.elf.dir/flags.make
 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj: ../Src/stm32f1xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj"
 	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS301ProjectClock.elf.dir\Src\stm32f1xx_hal_msp.c.obj   -c C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -279,7 +292,7 @@ CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.s: cmake_force
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj: CMakeFiles/CS301ProjectClock.elf.dir/flags.make
 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj: ../Src/stm32f1xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj"
 	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS301ProjectClock.elf.dir\Src\stm32f1xx_it.c.obj   -c C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\stm32f1xx_it.c
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.i: cmake_force
@@ -292,7 +305,7 @@ CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.s: cmake_force
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/sys.c.obj: CMakeFiles/CS301ProjectClock.elf.dir/flags.make
 CMakeFiles/CS301ProjectClock.elf.dir/Src/sys.c.obj: ../Src/sys.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/sys.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/sys.c.obj"
 	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS301ProjectClock.elf.dir\Src\sys.c.obj   -c C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\sys.c
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/sys.c.i: cmake_force
@@ -305,7 +318,7 @@ CMakeFiles/CS301ProjectClock.elf.dir/Src/sys.c.s: cmake_force
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj: CMakeFiles/CS301ProjectClock.elf.dir/flags.make
 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj: ../Src/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.obj"
 	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS301ProjectClock.elf.dir\Src\syscalls.c.obj   -c C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\syscalls.c
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.i: cmake_force
@@ -318,7 +331,7 @@ CMakeFiles/CS301ProjectClock.elf.dir/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj: CMakeFiles/CS301ProjectClock.elf.dir/flags.make
 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj: ../Src/system_stm32f1xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.obj"
 	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS301ProjectClock.elf.dir\Src\system_stm32f1xx.c.obj   -c C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\system_stm32f1xx.c
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.i: cmake_force
@@ -331,7 +344,7 @@ CMakeFiles/CS301ProjectClock.elf.dir/Src/system_stm32f1xx.c.s: cmake_force
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj: CMakeFiles/CS301ProjectClock.elf.dir/flags.make
 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj: ../Src/usart.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj"
 	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\CS301ProjectClock.elf.dir\Src\usart.c.obj   -c C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\Src\usart.c
 
 CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.i: cmake_force
@@ -344,7 +357,7 @@ CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.s: cmake_force
 
 CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj: CMakeFiles/CS301ProjectClock.elf.dir/flags.make
 CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj: ../startup/startup_stm32f103xe.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building ASM object CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building ASM object CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj"
 	C:\PROGRA~2\GNUTOO~1\82019-~1\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\CS301ProjectClock.elf.dir\startup\startup_stm32f103xe.s.obj -c C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\startup\startup_stm32f103xe.s
 
 # Object files for target CS301ProjectClock.elf
@@ -364,6 +377,7 @@ CS301ProjectClock_elf_OBJECTS = \
 "CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" \
 "CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" \
 "CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.obj" \
+"CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj" \
 "CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj" \
 "CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj" \
 "CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj" \
@@ -391,6 +405,7 @@ CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HA
 CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
 CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
 CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.obj
+CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
 CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
 CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj
 CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj
@@ -401,7 +416,7 @@ CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/Src/usart.c.obj
 CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/startup/startup_stm32f103xe.s.obj
 CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/build.make
 CS301ProjectClock.elf: CMakeFiles/CS301ProjectClock.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C executable CS301ProjectClock.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jerry\Desktop\mytmp\CS301ProjectClock\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking C executable CS301ProjectClock.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CS301ProjectClock.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CS301ProjectClock.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CS301ProjectClock.bin"

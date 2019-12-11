@@ -39,7 +39,7 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Debug
+CMAKE_BUILD_TYPE:STRING=
 
 //Id string of the compiler for the CodeBlocks IDE. Automatically
 // detected when left empty
@@ -128,8 +128,8 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/CS301ProjectClock
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/bin/arm-none-eabi-ld.exe
 
-//No help, variable specified on the command line.
-CMAKE_MAKE_PROGRAM:UNINITIALIZED=C:/MinGW/bin/mingw32-make.exe
+//Path to a program.
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/MinGW/bin/mingw32-make.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -165,6 +165,9 @@ CMAKE_PROJECT_NAME:STATIC=CS301ProjectClock
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files (x86)/GNU Tools ARM Embedded/8 2019-q3-update/bin/arm-none-eabi-ranlib.exe
+
+//Path to a program.
+CMAKE_SH:FILEPATH=CMAKE_SH-NOTFOUND
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -361,6 +364,8 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HOME_DIRECTORY:INTERNAL=C:/Users/jerry/Desktop/mytmp/CS301ProjectClock
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_MAKE_PROGRAM
+CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
 CMAKE_MODULE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_DEBUG
@@ -381,6 +386,8 @@ CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //Path to CMake installation.
 CMAKE_ROOT:INTERNAL=C:/Users/jerry/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/193.5233.103/bin/cmake/win/share/cmake-3.15
+//ADVANCED property for variable: CMAKE_SH
+CMAKE_SH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG

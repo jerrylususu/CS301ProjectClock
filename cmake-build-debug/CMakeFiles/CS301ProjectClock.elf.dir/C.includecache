@@ -10,6 +10,12 @@
 main.h
 ../Inc/main.h
 
+../Inc/lcd.h
+main.h
+../Inc/main.h
+stdlib.h
+../Inc/stdlib.h
+
 ../Inc/main.h
 stm32f1xx_hal.h
 ../Inc/stm32f1xx_hal.h
@@ -93,6 +99,8 @@ usart.h
 C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/usart.h
 gpio.h
 C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/gpio.h
+lcd.h
+C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/lcd.h
 
 C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h
 core_cm3.h

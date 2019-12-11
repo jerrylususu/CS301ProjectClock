@@ -41,6 +41,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/gpio.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.obj"
+  "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/lcd.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj"
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/main.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj"
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/stm32f1xx_hal_msp.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_hal_msp.c.obj"
   "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/stm32f1xx_it.c" "C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir/Src/stm32f1xx_it.c.obj"

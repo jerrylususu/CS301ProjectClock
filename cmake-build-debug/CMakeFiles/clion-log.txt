@@ -1,4 +1,11 @@
 C:\Users\jerry\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\193.5233.103\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/MinGW/bin/mingw32-make.exe -DCMAKE_C_COMPILER=C:/MinGW/bin/mingw32-gcc.exe -DCMAKE_CXX_COMPILER=C:/MinGW/bin/mingw32-g++.exe -G "CodeBlocks - MinGW Makefiles" C:\Users\jerry\Desktop\mytmp\CS301ProjectClock
+-- Configuring done
+You have changed variables that require your cache to be deleted.
+Configure will be re-run and you may have to reset some variables.
+The following variables have changed:
+CMAKE_C_COMPILER= C:/MinGW/bin/mingw32-gcc.exe
+CMAKE_CXX_COMPILER= C:/MinGW/bin/mingw32-g++.exe
+
 -- The C compiler identification is GNU 8.3.1
 -- The CXX compiler identification is GNU 8.3.1
 -- The ASM compiler identification is GNU

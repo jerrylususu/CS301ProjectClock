@@ -527,6 +527,33 @@ Src/gpio.c.s:
 	$(MAKE) -f CMakeFiles\CS301ProjectClock.elf.dir\build.make CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.s
 .PHONY : Src/gpio.c.s
 
+Src/lcd.obj: Src/lcd.c.obj
+
+.PHONY : Src/lcd.obj
+
+# target to build an object file
+Src/lcd.c.obj:
+	$(MAKE) -f CMakeFiles\CS301ProjectClock.elf.dir\build.make CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
+.PHONY : Src/lcd.c.obj
+
+Src/lcd.i: Src/lcd.c.i
+
+.PHONY : Src/lcd.i
+
+# target to preprocess a source file
+Src/lcd.c.i:
+	$(MAKE) -f CMakeFiles\CS301ProjectClock.elf.dir\build.make CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.i
+.PHONY : Src/lcd.c.i
+
+Src/lcd.s: Src/lcd.c.s
+
+.PHONY : Src/lcd.s
+
+# target to generate assembly for a file
+Src/lcd.c.s:
+	$(MAKE) -f CMakeFiles\CS301ProjectClock.elf.dir\build.make CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.s
+.PHONY : Src/lcd.c.s
+
 Src/main.obj: Src/main.c.obj
 
 .PHONY : Src/main.obj
@@ -779,6 +806,9 @@ help:
 	@echo ... Src/gpio.obj
 	@echo ... Src/gpio.i
 	@echo ... Src/gpio.s
+	@echo ... Src/lcd.obj
+	@echo ... Src/lcd.i
+	@echo ... Src/lcd.s
 	@echo ... Src/main.obj
 	@echo ... Src/main.i
 	@echo ... Src/main.s

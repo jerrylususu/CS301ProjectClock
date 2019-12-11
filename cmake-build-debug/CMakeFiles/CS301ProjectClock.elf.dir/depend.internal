@@ -1145,8 +1145,88 @@ CMakeFiles/CS301ProjectClock.elf.dir/Src/gpio.c.obj
  C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_fsmc.h
  C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_sdmmc.h
  C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h
+CMakeFiles/CS301ProjectClock.elf.dir/Src/lcd.c.obj
+ ../Inc/font.h
+ ../Inc/lcd.h
+ ../Inc/main.h
+ ../Inc/stm32f1xx_hal_conf.h
+ C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src/lcd.c
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xb.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f100xe.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f101x6.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f101xb.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f101xe.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f101xg.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f102x6.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f102xb.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xe.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xg.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f105xc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f107xc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_armcc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_armclang.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_compiler.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_gcc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_iccarm.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/cmsis_version.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/core_cm3.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/CMSIS/Include/mpu_armv7.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32f1xx_hal_can_ex_legacy.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32f1xx_hal_can_legacy.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cec.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dac.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dac_ex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_eth.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_hcd.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2s.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_irda.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_mmc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_nand.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_nor.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pccard.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pcd_ex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rtc_ex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_sd.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_smartcard.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_sram.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_usart.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_wwdg.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_fsmc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_sdmmc.h
+ C:/Users/jerry/STM32Cube/Repository/STM32Cube_FW_F1_V1.8.0/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h
 CMakeFiles/CS301ProjectClock.elf.dir/Src/main.c.obj
  ../Inc/gpio.h
+ ../Inc/lcd.h
  ../Inc/main.h
  ../Inc/stm32f1xx_hal_conf.h
  ../Inc/usart.h
