@@ -13,11 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff7d6266-a2ce-4b91-9493-f816a6ceb33e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.elf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CS301ProjectClock.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576025583462</updated>
       <workItem from="1576025609583" duration="3950000" />
-      <workItem from="1576077540299" duration="1692000" />
+      <workItem from="1576077540299" duration="1778000" />
     </task>
     <task id="LOCAL-00001" summary="add LED base">
       <created>1576027531625</created>
@@ -117,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576078279661</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="display second without time slow">
+      <created>1576079258714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576079258714</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -126,7 +128,8 @@
     <MESSAGE value="implement press key to change background color" />
     <MESSAGE value="implement display a number every second" />
     <MESSAGE value="add timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="add timer" />
+    <MESSAGE value="display second without time slow" />
+    <option name="LAST_COMMIT_MESSAGE" value="display second without time slow" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576027070657">
