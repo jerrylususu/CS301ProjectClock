@@ -11,7 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7d6266-a2ce-4b91-9493-f816a6ceb33e" name="Default Changelist" comment="">
+    <list default="true" id="ff7d6266-a2ce-4b91-9493-f816a6ceb33e" name="Default Changelist" comment="init state transition">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
     </list>
@@ -83,7 +83,7 @@
       <workItem from="1576025609583" duration="3950000" />
       <workItem from="1576077540299" duration="1778000" />
       <workItem from="1576290661470" duration="410000" />
-      <workItem from="1576291093777" duration="1383000" />
+      <workItem from="1576291093777" duration="5131000" />
     </task>
     <task id="LOCAL-00001" summary="add LED base">
       <created>1576027531625</created>
@@ -134,7 +134,49 @@
       <option name="project" value="LOCAL" />
       <updated>1576292132211</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="display in numbers">
+      <created>1576292541509</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1576292541509</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add mode var, print time with 0">
+      <created>1576293114613</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1576293114613</updated>
+    </task>
+    <task id="LOCAL-00010" summary="init state transition">
+      <created>1576294112006</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1576294112006</updated>
+    </task>
+    <task id="LOCAL-00011" summary="mode switch kind of working">
+      <created>1576295298174</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1576295298174</updated>
+    </task>
+    <task id="LOCAL-00012" summary="sub mode switch working">
+      <created>1576295677845</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1576295677845</updated>
+    </task>
+    <task id="LOCAL-00013" summary="highlight kinda works">
+      <created>1576296133211</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1576296133211</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -146,49 +188,56 @@
     <MESSAGE value="add timer" />
     <MESSAGE value="display second without time slow" />
     <MESSAGE value="display placeholder strings" />
-    <option name="LAST_COMMIT_MESSAGE" value="display placeholder strings" />
+    <MESSAGE value="display in numbers" />
+    <MESSAGE value="add mode var, print time with 0" />
+    <MESSAGE value="init state transition" />
+    <MESSAGE value="mode switch kind of working" />
+    <MESSAGE value="sub mode switch working" />
+    <MESSAGE value="highlight kinda works" />
+    <option name="LAST_COMMIT_MESSAGE" value="highlight kinda works" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576027070657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576027070657" />
-    <state x="519" y="111" key="CommitChangelistDialog2" timestamp="1576292130506">
+    <state x="387" y="111" key="CommitChangelistDialog2" timestamp="1576296131728">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-3148" y="-917" key="CommitChangelistDialog2/0.0.1920.1040/-3840.-1066.2560.1400@-3840.-1066.2560.1400" timestamp="1576079256954" />
-    <state x="519" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576292130506" />
+    <state x="387" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576296131728" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576027019764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576027019764" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1576292489621">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1576296235919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576292489621" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1576292489621">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576296235919" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1576296235918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576292489621" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1576292489620">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576296235918" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1576296235918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576292489620" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1576292489621">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576296235918" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1576296235919">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576292489621" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576028065960">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576296235919" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576295334295">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576028065960" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1576295334295" />
     <state x="0" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1576291094361">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576291094361" />
-    <state x="-2257" y="-751" width="672" height="678" key="search.everywhere.popup" timestamp="1576077796259">
-      <screen x="-3840" y="-1066" width="2560" height="1400" />
+    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup" timestamp="1576295331592">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-2257" y="-751" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-3840.-1066.2560.1400@-3840.-1066.2560.1400" timestamp="1576077796259" />
+    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576295331592" />
   </component>
 </project>

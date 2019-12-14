@@ -214,11 +214,6 @@ void setting_display(){
     char tmpStr[30];
     // print hints
     LCD_ShowString(60, 50, 200, 16, 16, (uint8_t*)"Date/Time Set");
-    if(mode==0){
-        LCD_ShowString(60, 30, 200, 16, 16, (uint8_t*)"SIM");
-    } else {
-        LCD_ShowString(60, 30, 200, 16, 16, (uint8_t*)"DIGI");
-    }
     LCD_ShowString(20, 250, 300, 16, 16, (uint8_t*)"[Next] [+] [-]");
 
 
@@ -262,6 +257,11 @@ void time_display_for_debug(){
     char tmpStr[30];
     // print hints
     LCD_ShowString(60, 50, 200, 16, 16, (uint8_t*)"NORMAL DISP!");
+    if(mode==0){
+        LCD_ShowString(60, 30, 200, 16, 16, (uint8_t*)"SIM");
+    } else {
+        LCD_ShowString(60, 30, 200, 16, 16, (uint8_t*)"DIGI");
+    }
     LCD_ShowString(20, 250, 300, 16, 16, (uint8_t*)"[Tg] [Set] [Dis]");
 
 
@@ -432,7 +432,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                         mode = 0;
                         break;
                     case 2: // setting
-                        if(sub_mode<6){ // need to set next
+                        if(sub_mode<5){ // need to set next
                             sub_mode++; // move to next
                         } else { // finished setting
                             sub_mode = 0;
