@@ -30,6 +30,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "command.h"
+#include <math.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -39,6 +40,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define PI acos(-1)
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -53,7 +55,6 @@ uint8_t rxBuffer[100];
 char msg[100];
 char time_text[20];
 uint32_t time_in_sec=0;
-uint8_t currentBackground = 6;
 /* USER CODE END PV */
 
 uint16_t year=2019;
@@ -76,6 +77,11 @@ my_time countdown[4];
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void show_analogue(u_int32_t accumulative_second);
+void show_digit(u_int32_t accumulative_second);
+void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day);
+void show_clock(_Bool whether_clock);
+void show_countdown(_Bool whether_countdown);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -157,6 +163,7 @@ int main(void)
         }
 
       HAL_Delay(500);
+
     /* USER CODE BEGIN 3 */
 
   }
@@ -409,71 +416,108 @@ void time_display_for_debug(){
 
 // utils
 
-void send_message_invoke(){
-    HAL_UART_Transmit(&huart1, (uint8_t *) msg, strlen(msg), HAL_MAX_DELAY);
+void switch_face(){
+    // switch between analogue and digit
 }
 
-void update_screen(){
-    switch (currentBackground) {
-        case 0:
-            LCD_Clear(WHITE);
-            BACK_COLOR = WHITE;
-            break;
-        case 1:
-            LCD_Clear(BLACK);
-            BACK_COLOR = BLACK;
-            break;
-        case 2:
-            LCD_Clear(BLUE);
-            BACK_COLOR = BLUE;
-            break;
-        case 3:
-            LCD_Clear(RED);
-            BACK_COLOR = RED;
-            break;
-        case 4:
-            LCD_Clear(MAGENTA);
-            BACK_COLOR = MAGENTA;
-            break;
-        case 5:
-            LCD_Clear(GREEN);
-            BACK_COLOR = GREEN;
-            break;
-        case 6:
-            LCD_Clear(CYAN);
-            BACK_COLOR = CYAN;
-            break;
-        case 7:
-            LCD_Clear(YELLOW);
-            BACK_COLOR = YELLOW;
-            break;
-        case 8:
-            LCD_Clear(BRRED);
-            BACK_COLOR = BRRED;
-            break;
-        case 9:
-            LCD_Clear(GRAY);
-            BACK_COLOR = GRAY;
-            break;
-        case 10:
-            LCD_Clear(LGRAY);
-            BACK_COLOR = LGRAY;
-            break;
-        case 11:
-            LCD_Clear(BROWN);
-            BACK_COLOR = BROWN;
-            break;
-    }
-    POINT_COLOR = RED;
-    LCD_ShowString(30, 40, 200, 24, 24, (uint8_t*) "Mini STM32 ^_^");
-    LCD_ShowString(30, 70, 200, 16, 16, (uint8_t*) "TFTLCD TEST");
+void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day){
+    // always show calendar at the bottom of screen
+    char tmpStr[30];
+    POINT_COLOR = BLUE;
+    sprintf(tmpStr, "%04hu", year);
+    LCD_ShowString(25, 240, 40, 40, 16, (uint8_t*) tmpStr);
+    LCD_ShowString(60, 240, 20, 40, 16, (uint8_t*)"Y");
+    sprintf(tmpStr, "%02d", month);
+    LCD_ShowString(80, 240, 20, 40, 16, (uint8_t*) tmpStr);
+    LCD_ShowString(100, 240, 20, 40, 16, (uint8_t*)"M");
+    sprintf(tmpStr, "%02d", day);
+    LCD_ShowString(120, 240, 20, 40, 16, (uint8_t*) tmpStr);
+    LCD_ShowString(140, 240, 20, 40, 16, (uint8_t*)"D");
+}
+
+void show_analogue(u_int32_t accumulative_second){
+    // get hour, minute, second
+    u_int32_t hour = accumulative_second / 3600;
+    u_int32_t minute = (accumulative_second % 3600) / 60;
+    u_int32_t second = accumulative_second - 3600 * hour - 60 * minute;
+    if (hour > 12) hour -= 12;
+    u_int32_t x0 = 120;
+    u_int32_t y0 = 120;
+    double a_hour, a_min, a_sec;
+    u_int32_t x_hour, y_hour, x_min, y_min, x_sec, y_sec;
+    // get radian
+    a_sec = second * 2 * PI / 60;
+    a_min = minute * 2 * PI / 60 ;
+    a_hour= hour * 2 * PI / 12 + a_min / 12;
+    // get end locations of 3 pointers
+    x_sec = 120 + (int)(85 * sin(a_sec));
+    y_sec = 120 - (int)(85 * cos(a_sec));
+    x_min = 120 + (int)(65 * sin(a_min));
+    y_min = 120 - (int)(65 * cos(a_min));
+    x_hour= 120 + (int)(45 * sin(a_hour));
+    y_hour= 120 - (int)(45 * cos(a_hour));
     POINT_COLOR = BLACK;
-    LCD_DrawRectangle(30, 150, 210, 190);
-    LCD_Fill(31, 151, 209, 189, YELLOW);
-//    x++;
-//    if (x == 12)
-//        x = 0;
-//    HAL_Delay(2000);
+    LCD_DrawPoint(x0, y0);
+    LCD_Draw_Circle(x0, y0, 1);
+    LCD_Draw_Circle(x0, y0, 2);
+    LCD_Draw_Circle(x0, y0, 100);
+    LCD_Draw_Circle(x0, y0, 101);
+    POINT_COLOR = RED;
+    LCD_DrawLine(x0, y0, x_sec, y_sec);
+    POINT_COLOR = BLACK;
+    LCD_DrawLine(x0, y0, x_min, y_min);
+    LCD_DrawLine(x0, y0, x_hour, y_hour);
+    for (int i = 0; i < 12; i++) {
+        a_hour= i * 2 * PI / 12;
+        POINT_COLOR = BLACK;
+        LCD_DrawLine(120 + (int) (95 * sin(a_hour)), 120 - (int) (95 * cos(a_hour)), 120 + (int) (100 * sin(a_hour)),
+                     120 - (int) (100 * cos(a_hour)));
+    }
+}
+
+void show_digit(u_int32_t accumulative_second){
+    char tmpStr[30];
+    u_int32_t hour = accumulative_second / 3600;
+    u_int32_t minute = (accumulative_second % 3600) / 60;
+    u_int32_t second = accumulative_second - 3600 * hour - 60 * minute;
+    POINT_COLOR = RED;
+    sprintf(tmpStr, "%02lu", hour);
+    LCD_ShowString(20, 95, 50, 50, 24, (uint8_t*) tmpStr);
+    LCD_ShowString(70, 95, 25, 50, 24, (uint8_t*)":");
+    sprintf(tmpStr, "%02lu", minute);
+    LCD_ShowString(95, 95, 25, 50, 24, (uint8_t*) tmpStr);
+    LCD_ShowString(145, 95, 50, 50, 24, (uint8_t*)":");
+    sprintf(tmpStr, "%02lu", second);
+    LCD_ShowString(170, 95, 50, 50, 24, (uint8_t*) tmpStr);
+}
+
+void show_clock(_Bool whether_clock){
+    POINT_COLOR = BLACK;
+    LCD_DrawRectangle(19, 289, 111, 311);
+    if (!whether_clock){
+        LCD_Fill(20, 290, 110, 310, LGRAY);
+    } else {
+        LCD_Fill(20, 290, 110, 310, GREEN);
+    }
+    POINT_COLOR = BLACK;
+    LCD_ShowString(47, 295, 50, 20, 16, (uint8_t*)"clock");
+}
+
+void show_countdown(_Bool whether_countdown){
+    POINT_COLOR = BLACK;
+    LCD_DrawRectangle(129, 289, 221, 311);
+    if (!whether_countdown){
+        LCD_Fill(130, 290, 220, 310, LGRAY);
+    } else {
+        LCD_Fill(130, 290, 220, 310, GREEN);
+    }
+    POINT_COLOR = BLACK;
+    LCD_ShowString(140, 295, 70, 20, 16, (uint8_t*)"countdown");
+}
+
+
+void send_message_invoke(){
+    HAL_UART_Transmit(&huart1, (uint8_t *) msg, strlen(msg), HAL_MAX_DELAY);
 }
 
 // change things
@@ -566,7 +610,6 @@ void set_second(uint8_t change){
 }
 
 // system interrupt handlers & callbacks
-
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     if(huart->Instance==USART1)
@@ -588,8 +631,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     }
     HAL_UART_Receive_IT(&huart1, (uint8_t *)rxBuffer, 1);
 }
-
-
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
@@ -670,13 +711,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
         default:
             break;
     }
-    if(currentBackground<0){
-        currentBackground += 12;
-    } else if(currentBackground>=12){
-        currentBackground -= 12;
-    }
-    sprintf(msg, "BG: %d\r\n", currentBackground);
-    send_message_invoke();
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
