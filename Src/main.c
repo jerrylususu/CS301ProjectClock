@@ -120,7 +120,11 @@ int main(void)
   /* USER CODE BEGIN 2 */
     HAL_TIM_Base_Start_IT(&htim3);
     HAL_UART_Receive_IT(&huart1, (uint8_t *)rxBuffer, 1);
-  /* USER CODE END 2 */
+
+    HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
+    HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+
+    /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -141,6 +145,15 @@ int main(void)
              time_display_for_debug();
         } else {
             setting_display();
+        }
+
+        // LED0 for alarm
+        if(alarm_ringing){
+            HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
+        }
+
+        if(countdown_ringing){
+            HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
         }
 
       HAL_Delay(500);
@@ -219,6 +232,7 @@ void check_for_alarm_countdown(){
         if( hour==alarm[i].hour && minute==alarm[i].minute && second==alarm[i].second){
             alarm_ringing==1;
             current_ringing_alarm=i;
+            alarm[i].hour=254;
         }
     }
 
@@ -226,6 +240,7 @@ void check_for_alarm_countdown(){
         if( hour==countdown[i].hour && minute==countdown[i].minute && second==countdown[i].second){
             countdown_ringing==1;
             current_ringing_countdown=i;
+            countdown[i].hour=254;
         }
     }
 }

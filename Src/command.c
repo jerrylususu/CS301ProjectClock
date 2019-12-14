@@ -254,7 +254,15 @@ void list(int type) {
             if(alarm[i].hour<24){ // enabled
                 sprintf(msg, "Alarm #%d - %02d:%02d:%02d\r\n", i, alarm[i].hour, alarm[i].minute, alarm[i].second);
             } else { // disabled
-                sprintf(msg, "Alarm #%d - [DISABLED]\r\n",i);
+                switch (alarm[i].hour){
+                    case 255:
+                        sprintf(msg, "Alarm #%d - [DISABLED]\r\n",i);
+                        break;
+                    case 254:
+                        sprintf(msg, "Alarm #%d - [RINGING]\r\n",i);
+                        break;
+                }
+
             }
             send_message();
         }
@@ -276,7 +284,14 @@ void list(int type) {
 
                 sprintf(msg, "Countdown #%d - %02d:%02d:%02d remaining\r\n", i, hour, minute, second);
             } else { // disabled
-                sprintf(msg, "Countdown #%d - [DISABLED]\r\n",i);
+                switch (countdown[i].hour){
+                    case 255:
+                        sprintf(msg, "Countdown #%d - [DISABLED]\r\n",i);
+                        break;
+                    case 254:
+                        sprintf(msg, "Countdown #%d - [RINGING]\r\n",i);
+                        break;
+                }
             }
             send_message();
         }
