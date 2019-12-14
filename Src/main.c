@@ -73,6 +73,7 @@ void SystemClock_Config(void);
 void setting_display();
 void send_message_invoke();
 void time_display_for_debug();
+void set_month_day_arr_by_year(uint16_t year);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -105,6 +106,7 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
   LCD_Init();
+  set_month_day_arr_by_year(year);
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -183,6 +185,38 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
+// date time util
+
+uint8_t year_is_leap(uint16_t year){
+    if(year%4!=0) return 0;
+    if(year%100==0 && year%400!=0) return 0;
+    return 1;
+}
+
+void set_month_day_arr_by_year(uint16_t year){
+    if(year_is_leap(year)==1){
+        // leap_year
+        month_days[2] = 29;
+    } else {
+        month_days[2] = 28;
+    }
+}
+
+
+// move day forward
+void move_day_forward(){
+    set_month_day_arr_by_year(year);
+    day++;
+    if(day > month_days[month]){
+        day = 1;
+        month++;
+    }
+    if(month>12){
+        month = 1;
+        year++;
+    }
+}
+
 // freeze values for entering setting mode
 void freeze_values_for_setting(){
     // prepare frozen time
@@ -205,6 +239,17 @@ void save_set_value_back(){
     month = setting_values[1];
     day = setting_values[2];
     time_in_sec = (setting_values[3] * 60 * 60 + setting_values[4] * 60 + setting_values[5]);
+}
+
+uint8_t day_is_valid(uint16_t year, uint8_t month, uint8_t day){
+    set_month_day_arr_by_year(year);
+
+    if( (1<=day && day<=month_days[month])  ){
+        return 1;
+    } else {
+        return 0;
+    }
+
 }
 
 void setting_highlight_disp(int i){
@@ -370,6 +415,7 @@ void update_screen(){
 
 // change things
 
+
 void set_year(uint8_t change){
     if(change==1){
         setting_values[0]++;
@@ -382,12 +428,6 @@ void set_year(uint8_t change){
     } else if (setting_values[0] > 2021){
         setting_values[0] = 2021;
     }
-}
-
-uint8_t year_is_leap(uint16_t year){
-    if(year%4!=0) return 0;
-    if(year%100==0 && year%400!=0) return 0;
-    return 1;
 }
 
 void set_month(uint8_t change){
@@ -407,14 +447,7 @@ void set_month(uint8_t change){
         setting_values[2] = 28;
     }
 
-    if( year_is_leap(setting_values[0])  ){
-        // leap_year
-        month_days[2] = 29;
-    } else{
-        // normal year
-        month_days[2] = 28;
-    }
-
+    set_month_day_arr_by_year(setting_values[0]);
 
     // prevent day exceed
     if (setting_values[2] > month_days[setting_values[1]]){
@@ -422,22 +455,7 @@ void set_month(uint8_t change){
     }
 }
 
-uint8_t day_is_valid(uint16_t year, uint8_t month, uint8_t day){
-    if( year_is_leap(year)==1  ){
-        // leap_year
-        month_days[2] = 29;
-    } else{
-        // normal year
-        month_days[2] = 28;
-    }
 
-    if( (1<=day && day<=month_days[month])  ){
-        return 1;
-    } else {
-        return 0;
-    }
-
-}
 
 void set_day(uint8_t change){
     int before_day = setting_values[2];
@@ -601,6 +619,12 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 //        sprintf(time_text, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
         sprintf(time_text, "sec=%lu", time_in_sec);
         time_in_sec++;
+
+        // reset time for new day
+        if(time_in_sec == (24*60*60)){
+            move_day_forward();
+            time_in_sec = 0;
+        }
 
         sprintf(msg, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
 //        sprintf(msg, "sec=%lu", time_in_sec);
