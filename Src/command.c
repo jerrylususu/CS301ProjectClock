@@ -333,7 +333,7 @@ void cancel(unsigned char *s, int type) {
 }
 
 void set_rest(unsigned char *s, uint8_t type){
-    freeze_values_for_setting();
+    freeze_values_for_setting(); // freeze values
 
     switch(type){
         case 3: // hour
@@ -372,6 +372,49 @@ void set_rest(unsigned char *s, uint8_t type){
             if(s[i]<'0' || s[i]>'9') break;
             val = val * 10 + s[i] - '0';
         }
+    }
+
+    uint8_t valid_to_change = 0;
+
+    switch(type){
+        case 3: // hour
+            setting_values[3] = val;
+            break;
+        case 4: // minute
+            setting_values[4] = val;
+            break;
+        case 5: // second
+            setting_values[5] = val;
+            break;
+        case 6: // year
+            setting_values[0] = val;
+            break;
+        case 7: // month
+            setting_values[1] = val;
+            break;
+        case 8: // day
+            setting_values[2] = val;
+            break;
+    }
+
+    switch(type){
+        case 3:
+        case 4:
+        case 5:
+            valid_to_change = time_is_valid(setting_values[3], setting_values[4], setting_values[5]);
+            break;
+        case 6:
+        case 7:
+        case 8:
+            valid_to_change = day_is_valid(setting_values[0], setting_values[1], setting_values[2]);
+            break;
+    }
+
+    if(valid_to_change==1){
+        save_set_value_back();
+    } else {
+        sprintf(msg, "invalid value\r\n");
+        send_message();
     }
 
 }

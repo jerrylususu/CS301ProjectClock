@@ -301,6 +301,10 @@ void move_day_forward(){
 uint8_t day_is_valid(uint16_t year, uint8_t month, uint8_t day){
     update_month_day_arr_by_year(year);
 
+    if( !(1970<=year&&year<=2038 && 1<=month&&month<=12   ) ){
+        return 0;
+    }
+
     if( (1<=day && day<=month_days[month])  ){
         return 1;
     } else {
