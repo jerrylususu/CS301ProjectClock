@@ -58,7 +58,8 @@ uint16_t year=2019;
 uint8_t month=12;
 uint8_t day=14;
 
-
+uint32_t time_when_start_setting;
+uint8_t current_mode=0; // 0: sim clock disp, 1: digital clock disp, 2: setting
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -117,7 +118,7 @@ int main(void)
     while (1)
   {
     /* USER CODE END WHILE */
-        sprintf(m, "hello, y=%d", y++);
+//        sprintf(m, "hello, y=%d", y++);
       POINT_COLOR = BLACK;
       LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) "        ");
       LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) time_text);
@@ -177,11 +178,11 @@ void setting_display(){
 
 
     // display date
-    sprintf(tmpStr, "%d", year);
+    sprintf(tmpStr, "%04d", year);
     LCD_ShowString(60, 70, 100, 16, 16, (uint8_t*) tmpStr);
-    sprintf(tmpStr, "%d", month);
+    sprintf(tmpStr, "%02d", month);
     LCD_ShowString(100, 70, 100, 16, 16, (uint8_t*) tmpStr);
-    sprintf(tmpStr, "%d", day);
+    sprintf(tmpStr, "%02d", day);
     LCD_ShowString(120, 70, 100, 16, 16, (uint8_t*) tmpStr);
 
     // prepare frozen time
@@ -191,11 +192,11 @@ void setting_display(){
     second = time_in_sec % 60;
 
     // display time
-    sprintf(tmpStr, "%d", hour);
+    sprintf(tmpStr, "%02d", hour);
     LCD_ShowString(60, 90, 100, 16, 16, (uint8_t*) tmpStr);
-    sprintf(tmpStr, "%d", minute);
+    sprintf(tmpStr, "%02d", minute);
     LCD_ShowString(80, 90, 100, 16, 16, (uint8_t*) tmpStr);
-    sprintf(tmpStr, "%d", second);
+    sprintf(tmpStr, "%02d", second);
     LCD_ShowString(100, 90, 100, 16, 16, (uint8_t*) tmpStr);
 
 
