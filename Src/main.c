@@ -75,13 +75,15 @@ uint8_t alarm_ringing, countdown_ringing;
 my_time alarm[4];
 my_time countdown[4];
 
+uint8_t alarm_set, countdown_set;
+
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void display_real_clock();
 void show_analogue(u_int32_t accumulative_second);
 void show_digit(u_int32_t accumulative_second);
 void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day);
-void show_clock(_Bool whether_clock);
+void show_alarm(_Bool whether_alarm);
 void show_countdown(_Bool whether_countdown);
 /* USER CODE BEGIN PFP */
 
@@ -217,6 +219,8 @@ void init_alarm_countdown(){
         alarm[i].hour = 255;
         countdown[i].hour = 255;
     }
+    alarm_set =0;
+    countdown_set=0;
 }
 
 void dismiss_alarm_countdown(){
@@ -239,7 +243,13 @@ void check_for_alarm_countdown(){
     minute = time_in_sec / 60  - hour*60;
     second = time_in_sec % 60;
 
+    alarm_set = 0;
+    countdown_set = 0;
+
     for(uint8_t i=0;i<4;i++){
+        if(alarm[i].hour<24 || alarm[i].hour==254){
+            alarm_set = 1;
+        }
         if( hour==alarm[i].hour && minute==alarm[i].minute && second==alarm[i].second){
             alarm_ringing=1;
             current_ringing_alarm=i;
@@ -248,6 +258,9 @@ void check_for_alarm_countdown(){
     }
 
     for(uint8_t i=0;i<4;i++){
+        if(countdown[i].hour<24 || countdown[i].hour==254){
+            countdown_set = 1;
+        }
         if( hour==countdown[i].hour && minute==countdown[i].minute && second==countdown[i].second){
             countdown_ringing=1;
             current_ringing_countdown=i;
@@ -427,23 +440,25 @@ void display_real_clock(){
         show_digit(time_in_sec);
     }
     show_calendar(year, month, day);
-    show_clock(1);
-    show_countdown(1);
+    show_alarm(alarm_set);
+    show_countdown(countdown_set);
 }
 
 void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day){
     // always show calendar at the bottom of screen
     char tmpStr[30];
     POINT_COLOR = BLUE;
-    sprintf(tmpStr, "%04hu", year);
-    LCD_ShowString(25, 240, 40, 40, 16, (uint8_t*) tmpStr);
-    LCD_ShowString(60, 240, 20, 40, 16, (uint8_t*)"Y");
-    sprintf(tmpStr, "%02d", month);
-    LCD_ShowString(80, 240, 20, 40, 16, (uint8_t*) tmpStr);
-    LCD_ShowString(100, 240, 20, 40, 16, (uint8_t*)"M");
-    sprintf(tmpStr, "%02d", day);
-    LCD_ShowString(120, 240, 20, 40, 16, (uint8_t*) tmpStr);
-    LCD_ShowString(140, 240, 20, 40, 16, (uint8_t*)"D");
+    sprintf(tmpStr, "%04d / %02d / %02d", year, month, day);
+    LCD_ShowString(60, 240, 140, 30, 16, (uint8_t*) tmpStr);
+//    sprintf(tmpStr, "%04hu", year);
+//    LCD_ShowString(25, 240, 40, 40, 16, (uint8_t*) tmpStr);
+//    LCD_ShowString(60, 240, 20, 40, 16, (uint8_t*)"/");
+//    sprintf(tmpStr, "%02d", month);
+//    LCD_ShowString(80, 240, 20, 40, 16, (uint8_t*) tmpStr);
+//    LCD_ShowString(100, 240, 20, 40, 16, (uint8_t*)"/");
+//    sprintf(tmpStr, "%02d", day);
+//    LCD_ShowString(120, 240, 20, 40, 16, (uint8_t*) tmpStr);
+//    LCD_ShowString(140, 240, 20, 40, 16, (uint8_t*)"/");
 }
 
 void show_analogue(u_int32_t accumulative_second){
@@ -492,26 +507,28 @@ void show_digit(u_int32_t accumulative_second){
     u_int32_t minute = (accumulative_second % 3600) / 60;
     u_int32_t second = accumulative_second - 3600 * hour - 60 * minute;
     POINT_COLOR = RED;
-    sprintf(tmpStr, "%02lu", hour);
-    LCD_ShowString(20, 95, 50, 50, 24, (uint8_t*) tmpStr);
-    LCD_ShowString(70, 95, 25, 50, 24, (uint8_t*)":");
-    sprintf(tmpStr, "%02lu", minute);
-    LCD_ShowString(95, 95, 25, 50, 24, (uint8_t*) tmpStr);
-    LCD_ShowString(145, 95, 50, 50, 24, (uint8_t*)":");
-    sprintf(tmpStr, "%02lu", second);
-    LCD_ShowString(170, 95, 50, 50, 24, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%02d:%02d:%02d", hour, minute, second);
+    LCD_ShowString(70,95,220,180,24, tmpStr);
+//    sprintf(tmpStr, "%02lu", hour);
+//    LCD_ShowString(20, 95, 50, 50, 24, (uint8_t*) tmpStr);
+//    LCD_ShowString(70, 95, 25, 50, 24, (uint8_t*)":");
+//    sprintf(tmpStr, "%02lu", minute);
+//    LCD_ShowString(95, 95, 25, 50, 24, (uint8_t*) tmpStr);
+//    LCD_ShowString(145, 95, 50, 50, 24, (uint8_t*)":");
+//    sprintf(tmpStr, "%02lu", second);
+//    LCD_ShowString(170, 95, 50, 50, 24, (uint8_t*) tmpStr);
 }
 
-void show_clock(_Bool whether_clock){
+void show_alarm(_Bool whether_alarm){
     POINT_COLOR = BLACK;
     LCD_DrawRectangle(19, 289, 111, 311);
-    if (!whether_clock){
+    if (!whether_alarm){
         LCD_Fill(20, 290, 110, 310, LGRAY);
     } else {
         LCD_Fill(20, 290, 110, 310, GREEN);
     }
     POINT_COLOR = BLACK;
-    LCD_ShowString(47, 295, 50, 20, 16, (uint8_t*)"clock");
+    LCD_ShowString(47, 295, 50, 20, 16, (uint8_t*)"alarm");
 }
 
 void show_countdown(_Bool whether_countdown){
