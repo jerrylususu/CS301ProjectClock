@@ -449,10 +449,39 @@ void set_day(uint8_t change){
     }
 
     // day validity check
-    send_message_invoke();
     if(day_is_valid(setting_values[0], setting_values[1], setting_values[2])!=1){
         setting_values[2] = before_day;
     }
+}
+
+void set_hour(uint8_t change){
+    if(change==1){
+        setting_values[3]++;
+    } else {
+        setting_values[3]--;
+    }
+
+    setting_values[3] = (setting_values[3]+24) % 24;
+}
+
+void set_minute(uint8_t change){
+    if(change==1){
+        setting_values[4]++;
+    } else {
+        setting_values[4]--;
+    }
+
+    setting_values[4] = (setting_values[4]+60) % 60;
+}
+
+void set_second(uint8_t change){
+    if(change==1){
+        setting_values[5]++;
+    } else {
+        setting_values[5]--;
+    }
+
+    setting_values[5] = (setting_values[5]+60) % 60;
 }
 
 // system interrupt handlers & callbacks
@@ -495,6 +524,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                             case 0: set_year(2); break;
                             case 1: set_month(2); break;
                             case 2: set_day(2); break;
+                            case 3: set_hour(2); break;
+                            case 4: set_minute(2); break;
+                            case 5: set_second(2); break;
                         }
                         break;
                 }
@@ -517,6 +549,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                             case 0: set_year(1); break;
                             case 1: set_month(1); break;
                             case 2: set_day(1); break;
+                            case 3: set_hour(1); break;
+                            case 4: set_minute(1); break;
+                            case 5: set_second(1); break;
                         }
                         break;
                 }
