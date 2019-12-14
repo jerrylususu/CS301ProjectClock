@@ -59,7 +59,8 @@ uint8_t month=12;
 uint8_t day=14;
 
 uint32_t time_when_start_setting;
-uint8_t current_mode=0; // 0: sim clock disp, 1: digital clock disp, 2: setting
+uint8_t mode=0; // 0: sim clock disp, 1: digital clock disp, 2: setting
+uint8_t sub_mode=0; // submode setting
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -302,22 +303,55 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     switch (GPIO_Pin) {
         case KEY0_Pin:
             if (HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) == GPIO_PIN_RESET) {
-                HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
-                currentBackground--;
                 update_screen();
+
+                switch (mode){
+                    case 0: // sim clock
+                        mode = 1;
+                        break;
+                    case 1: // digi clock
+                        mode = 0;
+                        break;
+                    case 2: // setting
+                        if(sub_mode<6){ // need to set next
+                            sub_mode++; // move to next
+                        } else { // finished setting
+                            sub_mode = 0;
+                            mode = 0; // back to sim
+                        }
+                        break;
+                }
+
             }
             break;
         case KEY1_Pin:
             if (HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin) == GPIO_PIN_RESET) {
-                HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
-                currentBackground++;
                 update_screen();
+
+                switch (mode){
+                    case 0:
+                    case 1: // enter setting mode in both sim/digi clock
+                        mode = 2;
+                        break;
+                    case 2: // increase current value
+                        //
+                        break;
+                }
+
             }
             break;
         case KEY_WK_Pin:
             if (HAL_GPIO_ReadPin(KEY_WK_GPIO_Port, KEY_WK_Pin) == GPIO_PIN_SET) {
-                HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
-                HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+
+                switch (mode){
+                    case 0:
+                    case 1: // disable alarm/countdown notification
+                        break;
+                    case 2: // decrease current value
+                        //
+                        break;
+                }
+
             }
             break;
         default:
