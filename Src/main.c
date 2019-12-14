@@ -63,6 +63,8 @@ uint8_t mode=0; // 0: sim clock disp, 1: digital clock disp, 2: setting
 uint8_t sub_mode=0; // submode setting
 
 int setting_values[6]; // values to be set in setting mode
+
+uint8_t month_days[] = {0, 31, 30, 28, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // days in month
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -382,6 +384,30 @@ void set_year(uint8_t change){
     }
 }
 
+void set_month(uint8_t change){
+    if(change==1){
+        setting_values[1]++;
+    } else {
+        setting_values[1]--;
+    }
+
+    setting_values[1] = setting_values[1] % 12;
+    if(setting_values[1]==0){
+        setting_values[1] = 12;
+    }
+}
+
+void set_day(uint8_t change){
+    if(change==1){
+        setting_values[2]++;
+    } else {
+        setting_values[2]--;
+    }
+
+    // day validity check
+
+}
+
 // system interrupt handlers & callbacks
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
@@ -418,8 +444,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                         break;
                     case 2: // decrease current value
                         //
-                        if(sub_mode==0){
-                            set_year(2);
+                        switch (sub_mode){
+                            case 0: set_year(2); break;
+                            case 1: set_month(2); break;
                         }
                         break;
                 }
@@ -438,8 +465,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                         break;
                     case 2: // increase current value
                         //
-                        if(sub_mode==0){
-                            set_year(1);
+                        switch (sub_mode){
+                            case 0: set_year(1); break;
+                            case 1: set_month(1); break;
                         }
                         break;
                 }
