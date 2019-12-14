@@ -12,13 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff7d6266-a2ce-4b91-9493-f816a6ceb33e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Inc/command.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Src/command.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/OCD_CS301ProjectClock.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/OCD_CS301ProjectClock.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mxproject" beforeDir="false" afterPath="$PROJECT_DIR$/.mxproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/command.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/command.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +86,7 @@
       <updated>1576025583462</updated>
       <workItem from="1576025609583" duration="3950000" />
       <workItem from="1576077540299" duration="1778000" />
-      <workItem from="1576291896729" duration="2562000" />
+      <workItem from="1576291896729" duration="5030000" />
     </task>
     <task id="LOCAL-00001" summary="add LED base">
       <created>1576027531625</created>
@@ -164,22 +159,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576027019764" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1576031220118">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1576296804228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576031220118" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1576031220118">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576296804228" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1576296804228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576031220118" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1576031220117">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576296804228" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1576296804227">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576031220117" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1576031220118">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576296804227" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1576296804228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576031220118" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576296804228" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576028065960">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
