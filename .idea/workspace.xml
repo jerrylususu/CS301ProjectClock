@@ -11,7 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7d6266-a2ce-4b91-9493-f816a6ceb33e" name="Default Changelist" comment="move_day_forward done" />
+    <list default="true" id="ff7d6266-a2ce-4b91-9493-f816a6ceb33e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/command.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/command.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +87,7 @@
       <workItem from="1576077540299" duration="1778000" />
       <workItem from="1576290661470" duration="410000" />
       <workItem from="1576291093777" duration="9730000" />
-      <workItem from="1576302382301" duration="2028000" />
+      <workItem from="1576302382301" duration="2859000" />
     </task>
     <task id="LOCAL-00001" summary="add LED base">
       <created>1576027531625</created>
@@ -238,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576302801313</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="base merge">
+      <created>1576305892282</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1576305892282</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -265,18 +277,19 @@
     <MESSAGE value="move_day_forward done" />
     <MESSAGE value="update readme to keep consistency with implementation" />
     <MESSAGE value="clean up, add prototype" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up, add prototype" />
+    <MESSAGE value="base merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="base merge" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576027070657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576027070657" />
-    <state x="387" y="111" key="CommitChangelistDialog2" timestamp="1576302799623">
+    <state x="387" y="111" key="CommitChangelistDialog2" timestamp="1576305888884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-3148" y="-917" key="CommitChangelistDialog2/0.0.1920.1040/-3840.-1066.2560.1400@-3840.-1066.2560.1400" timestamp="1576079256954" />
-    <state x="387" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576302799623" />
+    <state x="387" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576305888884" />
     <state x="184" y="85" key="DiffContextDialog" timestamp="1576305635061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -285,22 +298,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576027019764" />
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1576304298913">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1576306690906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576304298913" />
-    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1576304298913">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576306690906" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1576306690906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576304298913" />
-    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1576304298912">
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576306690906" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1576306690906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576304298912" />
-    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1576304298913">
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576306690906" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1576306690906">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576304298913" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576306690906" />
     <state x="87" y="32" width="1785" height="947" key="MergeDialog" timestamp="1576305875231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

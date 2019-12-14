@@ -72,34 +72,6 @@ uint8_t month_days[] = {0, 31, 30, 28, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // d
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 
-// date time util
-uint8_t year_is_leap(uint16_t year);
-void update_month_day_arr_by_year(uint16_t year);
-void move_day_forward();
-uint8_t day_is_valid(uint16_t year, uint8_t month, uint8_t day);
-
-// settings related
-void freeze_values_for_setting();
-void save_set_value_back();
-void setting_highlight_disp(int i);
-
-// display
-void setting_display();
-void time_display_for_debug();
-
-// utils
-void send_message_invoke();
-
-// test only - deprecated
-void update_screen();
-
-// really set
-void set_year(uint8_t change);
-void set_month(uint8_t change);
-void set_day(uint8_t change);
-void set_hour(uint8_t change);
-void set_minute(uint8_t change);
-void set_second(uint8_t change);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/

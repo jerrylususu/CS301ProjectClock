@@ -5,6 +5,7 @@
 #include <stdint-gcc.h>
 #include <string.h>
 #include "usart.h"
+#include "main.h"
 #include "../Inc/command.h"
 #define SEND_VALID(s)   do {\
                             sprintf(msg, "Valid command %s\r\n", s);\
@@ -18,7 +19,9 @@
 
 extern UART_HandleTypeDef huart1;
 extern char msg[100];
-
+extern int setting_values[6];
+int date_to_set[3];
+int time_to_set[3];
 
 const unsigned char* set_comm[] = {"time", "alarm", "countdown"};
 const unsigned char* lc_comm[] = {"alarm", "countdown"};
@@ -28,7 +31,7 @@ void send_message() {
 }
 
 
-
+// parse
 uint8_t parse_literal(unsigned char *s, const unsigned char *literal) {
     uint8_t len = strlen(s);
     uint8_t litlen = strlen(literal);
@@ -48,7 +51,7 @@ uint8_t parse_literal(unsigned char *s, const unsigned char *literal) {
     }
     return tag;
 }
-void parse_date_str(unsigned char *s) {
+uint8_t parse_date_str(unsigned char *s) {
     uint8_t len = strlen(s);
     int time[3] = {0,0,0};
     uint8_t flag = 1;
@@ -83,9 +86,30 @@ void parse_date_str(unsigned char *s) {
         sprintf(msg, "%d-%d-%d\r\n", time[0], time[1], time[2]);
         send_message();
     }
+
+    if (day_is_valid(time[0], time[1], time[2])!=1) {
+        sprintf(msg, "date invalid, retry\r\n");
+        send_message();
+        return 1;
+    } else {
+        // date valid
+        date_to_set[0] = time[0];
+        date_to_set[1] = time[1];
+        date_to_set[2] = time[2];
+        return 0;
+    }
+
 }
 
-void parse_time_str(unsigned char *s) {
+uint8_t time_is_valid(uint8_t hour, u_int8_t minute, u_int8_t second){
+    if( (0<=hour && hour<=23) && (0<=minute && minute<=59) && (0<=second && second<=59)  ){
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+uint8_t parse_time_str(unsigned char *s) {
     uint8_t len = strlen(s);
     int time[3] = {0,0,0};
     uint8_t flag = 1;
@@ -116,8 +140,21 @@ void parse_time_str(unsigned char *s) {
         sprintf(msg, "%d:%d:%d\r\n", time[0], time[1], time[2]);
         send_message();
     }
+
+    if(time_is_valid(time[0], time[1], time[2])!=1){
+        sprintf(msg, "time invalid, retry~!\r\n");
+        send_message();
+        return 1;
+    } else{
+        time_to_set[0] = time[0];
+        time_to_set[1] = time[1];
+        time_to_set[2] = time[2];
+        return 0;
+    }
 }
 
+
+// set
 void set_time(unsigned char *s) {
     uint8_t len = strlen(s);
     unsigned char time_str[100];
