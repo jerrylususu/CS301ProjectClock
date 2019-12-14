@@ -442,6 +442,8 @@ void display_real_clock(){
     show_calendar(year, month, day);
     show_alarm(alarm_set);
     show_countdown(countdown_set);
+
+    LCD_ShowString(60,300,200,16,12, (uint8_t*)"[A/D] [Set] [Dismiss]");
 }
 
 void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day){
@@ -504,26 +506,26 @@ void show_digit(u_int32_t accumulative_second){
 
 void show_alarm(_Bool whether_alarm){
     POINT_COLOR = BLACK;
-    LCD_DrawRectangle(19, 289, 111, 311);
+    LCD_DrawRectangle(19, 269, 111, 291);
     if (!whether_alarm){
-        LCD_Fill(20, 290, 110, 310, LGRAY);
+        LCD_Fill(20, 270, 110, 290, LGRAY);
     } else {
-        LCD_Fill(20, 290, 110, 310, GREEN);
+        LCD_Fill(20, 270, 110, 290, GREEN);
     }
     POINT_COLOR = BLACK;
-    LCD_ShowString(47, 295, 50, 20, 16, (uint8_t*)"alarm");
+    LCD_ShowString(47, 275, 50, 20, 16, (uint8_t*)"alarm");
 }
 
 void show_countdown(_Bool whether_countdown){
     POINT_COLOR = BLACK;
-    LCD_DrawRectangle(129, 289, 221, 311);
+    LCD_DrawRectangle(129, 269, 221, 291);
     if (!whether_countdown){
-        LCD_Fill(130, 290, 220, 310, LGRAY);
+        LCD_Fill(130, 270, 220, 290, LGRAY);
     } else {
-        LCD_Fill(130, 290, 220, 310, GREEN);
+        LCD_Fill(130, 270, 220, 290, GREEN);
     }
     POINT_COLOR = BLACK;
-    LCD_ShowString(140, 295, 70, 20, 16, (uint8_t*)"countdown");
+    LCD_ShowString(140, 275, 70, 20, 16, (uint8_t*)"countdown");
 }
 
 
