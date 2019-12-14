@@ -70,6 +70,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 void setting_display();
 void send_message_invoke();
+void time_display_for_debug();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -126,7 +127,14 @@ int main(void)
       LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) "        ");
       LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) time_text);
 //      LCD_ShowString(220,300, 200,16,16, (uint8_t*) "H");
-        setting_display();
+//        setting_display();
+
+        if(mode==0 || mode==1){
+             time_display_for_debug();
+        } else {
+            setting_display();
+        }
+
       HAL_Delay(500);
     /* USER CODE BEGIN 3 */
 
@@ -193,6 +201,8 @@ void freeze_values_for_setting(){
 // display the setting page
 // TODO: highlight the value being set.
 void setting_display(){
+    LCD_Fill(0, 30, 240, 290, WHITE);
+
     char tmpStr[30];
     // print hints
     LCD_ShowString(60, 50, 200, 16, 16, (uint8_t*)"Date/Time Set");
@@ -223,6 +233,43 @@ void setting_display(){
 
 }
 
+void time_display_for_debug(){
+
+//    LCD_DrawRectangle(0, 30, 240, 290);
+    LCD_Fill(0, 30, 240, 290, YELLOW);
+
+    char tmpStr[30];
+    // print hints
+    LCD_ShowString(60, 50, 200, 16, 16, (uint8_t*)"NORMAL DISP!");
+    LCD_ShowString(20, 250, 300, 16, 16, (uint8_t*)"[Tg] [Set] [Dis]");
+
+
+    // display date
+    sprintf(tmpStr, "%04d", year);
+    LCD_ShowString(60, 70, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%02d", month);
+    LCD_ShowString(100, 70, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%02d", day);
+    LCD_ShowString(120, 70, 100, 16, 16, (uint8_t*) tmpStr);
+
+    uint8_t hour, minute, second;
+    hour = time_in_sec / (60 * 60);
+    minute = time_in_sec / 60  - hour*60;
+    second = time_in_sec % 60;
+
+    // display time
+    sprintf(tmpStr, "%02d", hour);
+    LCD_ShowString(60, 90, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%02d", minute);
+    LCD_ShowString(80, 90, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%02d", second);
+    LCD_ShowString(100, 90, 100, 16, 16, (uint8_t*) tmpStr);
+
+    // debug show current sub mode
+    sprintf(tmpStr, "sub=%d", sub_mode);
+    LCD_ShowString(0, 300, 200, 16, 16, (uint8_t*) tmpStr);
+
+};
 
 // utils
 
