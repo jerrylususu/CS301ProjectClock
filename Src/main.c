@@ -171,15 +171,32 @@ void SystemClock_Config(void)
 
 // display the setting page
 void setting_display(){
+    char tmpStr[30];
     LCD_ShowString(60, 50, 200, 16, 16, (uint8_t*)"Date/Time Set");
-    LCD_ShowString(60, 70, 100, 16, 16, (uint8_t*) "YYYY");
-    LCD_ShowString(100, 70, 100, 16, 16, (uint8_t*) "MM");
-    LCD_ShowString(120, 70, 100, 16, 16, (uint8_t*) "DD");
-    LCD_ShowString(60, 90, 100, 16, 16, (uint8_t*) "HH");
-    LCD_ShowString(80, 90, 100, 16, 16, (uint8_t*) "mm");
-    LCD_ShowString(100, 90, 100, 16, 16, (uint8_t*) "ss");
+    LCD_ShowString(20, 250, 300, 16, 16, (uint8_t*)"[Next] [+] [-]");
 
 
+    // display date
+    sprintf(tmpStr, "%d", year);
+    LCD_ShowString(60, 70, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%d", month);
+    LCD_ShowString(100, 70, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%d", day);
+    LCD_ShowString(120, 70, 100, 16, 16, (uint8_t*) tmpStr);
+
+    // prepare frozen time
+    uint8_t hour, minute, second;
+    hour = time_in_sec / (60 * 60);
+    minute = time_in_sec / 60  - hour*60;
+    second = time_in_sec % 60;
+
+    // display time
+    sprintf(tmpStr, "%d", hour);
+    LCD_ShowString(60, 90, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%d", minute);
+    LCD_ShowString(80, 90, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%d", second);
+    LCD_ShowString(100, 90, 100, 16, 16, (uint8_t*) tmpStr);
 
 
 }
