@@ -61,6 +61,8 @@ void Error_Handler(void);
 
 // alarm, countdown
 void init_alarm_countdown();
+void dismiss_alarm_countdown();
+void check_for_alarm_countdown();
 
 // date time util
 uint8_t year_is_leap(uint16_t year);

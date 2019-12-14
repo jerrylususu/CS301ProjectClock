@@ -197,6 +197,39 @@ void init_alarm_countdown(){
     }
 }
 
+void dismiss_alarm_countdown(){
+    if(alarm_ringing==1){
+        alarm_ringing = 0;
+        alarm[current_ringing_alarm].hour = 255;
+    }
+
+    if(countdown_ringing==1){
+        countdown_ringing = 0;
+        countdown[current_ringing_countdown].hour = 255;
+    }
+}
+
+void check_for_alarm_countdown(){
+    uint8_t hour, minute, second;
+    hour = time_in_sec / (60 * 60);
+    minute = time_in_sec / 60  - hour*60;
+    second = time_in_sec % 60;
+
+    for(uint8_t i=0;i<4;i++){
+        if( hour==alarm[i].hour && minute==alarm[i].minute && second==alarm[i].second){
+            alarm_ringing==1;
+            current_ringing_alarm=i;
+        }
+    }
+
+    for(uint8_t i=0;i<4;i++){
+        if( hour==countdown[i].hour && minute==countdown[i].minute && second==countdown[i].second){
+            countdown_ringing==1;
+            current_ringing_countdown=i;
+        }
+    }
+}
+
 // date time util
 uint8_t year_is_leap(uint16_t year){
     if(year%4!=0) return 0;
@@ -550,6 +583,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                 switch (mode){
                     case 0:
                     case 1: // disable alarm/countdown notification
+                        dismiss_alarm_countdown();
                         break;
                     case 2: // decrease current value
                         //
@@ -639,6 +673,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
             move_day_forward();
             time_in_sec = 0;
         }
+
+        // check for alarm and countdown
+        check_for_alarm_countdown();
 
         sprintf(msg, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
 //        sprintf(msg, "sec=%lu", time_in_sec);
