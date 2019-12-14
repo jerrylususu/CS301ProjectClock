@@ -1,0 +1,640 @@
+The target system is: Generic - 1 - 
+The host system is: Darwin - 19.2.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/local/bin/arm-none-eabi-gcc 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "/Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/local/bin/arm-none-eabi-g++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "/Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+arm-none-eabi-gcc (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b4c27/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b4c27.dir/build.make CMakeFiles/cmTC_b4c27.dir/build
+Building C object CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj
+/usr/local/bin/arm-none-eabi-gcc   -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99    -v -o CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj   -c "/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCCompilerABI.c"
+Using built-in specs.
+Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/local/bin/arm-none-eabi-gcc
+Target: arm-none-eabi
+Configured with: /tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native --libexecdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/lib --infodir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1 -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7-m/nofp -iprefix /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/ -isysroot /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ /Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m3 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj -g -std=gnu99 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//ccXNoA3t.s
+GNU C99 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)
+	compiled by GNU C version 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/include"
+ignoring nonexistent directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/include-fixed"
+ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/include/newlib-nano
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include-fixed
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C99 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)
+	compiled by GNU C version 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: db2377360e540a6b416884f1a3d4ba85
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj /var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//ccXNoA3t.s
+GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 2.33.1.20191025
+COMPILER_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+Linking C executable cmTC_b4c27
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_b4c27.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-gcc -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld -v CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj  -o cmTC_b4c27 
+Using built-in specs.
+Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/local/bin/arm-none-eabi-gcc
+COLLECT_LTO_WRAPPER=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper
+Target: arm-none-eabi
+Configured with: /tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native --libexecdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/lib --infodir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 
+COMPILER_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-T' '/Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld' '-v' '-o' 'cmTC_b4c27' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/collect2 -plugin /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/liblto_plugin.so -plugin-opt=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//cc9i3eBg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi -X -o cmTC_b4c27 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crti.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtbegin.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1 -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtend.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtn.o -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-T' '/Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld' '-v' '-o' 'cmTC_b4c27' '-mfloat-abi=soft' '-march=armv7-m'
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/include/newlib-nano]
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include]
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include-fixed]
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include]
+  end of search list found
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/include/newlib-nano] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/newlib-nano]
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/include]
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include-fixed] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/include-fixed]
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include]
+  implicit include dirs: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/newlib-nano;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/include;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/include-fixed;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_b4c27/fast ]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_b4c27.dir/build.make CMakeFiles/cmTC_b4c27.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/local/bin/arm-none-eabi-gcc   -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99    -v -o CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj   -c "/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCCompilerABI.c"]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nosys.specs]
+  ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+  ignore line: [Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nano.specs]
+  ignore line: [rename spec link to nano_link]
+  ignore line: [rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence]
+  ignore line: [rename spec cpp_unique_options to nano_cpp_unique_options]
+  ignore line: [COLLECT_GCC=/usr/local/bin/arm-none-eabi-gcc]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native --libexecdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/lib --infodir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1 -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7-m/nofp -iprefix /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/ -isysroot /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ /Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m3 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj -g -std=gnu99 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//ccXNoA3t.s]
+  ignore line: [GNU C99 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/include"]
+  ignore line: [ignoring nonexistent directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include"]
+  ignore line: [ignoring nonexistent directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/include/newlib-nano]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include-fixed]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C99 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: db2377360e540a6b416884f1a3d4ba85]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj /var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//ccXNoA3t.s]
+  ignore line: [GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 2.33.1.20191025]
+  ignore line: [COMPILER_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-v' '-o' 'CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [Linking C executable cmTC_b4c27]
+  ignore line: ["/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_b4c27.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/arm-none-eabi-gcc -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld -v CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj  -o cmTC_b4c27 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nosys.specs]
+  ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+  ignore line: [Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nano.specs]
+  ignore line: [rename spec link to nano_link]
+  ignore line: [rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence]
+  ignore line: [rename spec cpp_unique_options to nano_cpp_unique_options]
+  ignore line: [COLLECT_GCC=/usr/local/bin/arm-none-eabi-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native --libexecdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/lib --infodir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) ]
+  ignore line: [COMPILER_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=gnu99' '-T' '/Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld' '-v' '-o' 'cmTC_b4c27' '-mfloat-abi=soft' '-march=armv7-m']
+  link line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/collect2 -plugin /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/liblto_plugin.so -plugin-opt=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//cc9i3eBg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi -X -o cmTC_b4c27 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crti.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtbegin.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1 -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtend.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtn.o -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld]
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//cc9i3eBg.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lg_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [--sysroot=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi] ==> ignore
+    arg [-X] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b4c27] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crti.o] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtbegin.o] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o] ==> ignore
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib]
+    arg [-gc-sections] ==> ignore
+    arg [--print-memory-usage] ==> ignore
+    arg [CMakeFiles/cmTC_b4c27.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lg_nano] ==> lib [g_nano]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [--end-group] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [-lnosys] ==> lib [nosys]
+    arg [--end-group] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [-lnosys] ==> lib [nosys]
+    arg [--end-group] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtend.o] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtn.o] ==> ignore
+    arg [-T] ==> ignore
+    arg [/Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld] ==> ignore
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib/thumb/v7-m/nofp]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib/thumb/v7-m/nofp]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib]
+  implicit libs: [gcc;g_nano;c_nano;gcc;c_nano;nosys;gcc;c_nano;nosys]
+  implicit dirs: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib/thumb/v7-m/nofp;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c19ec/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_c19ec.dir/build.make CMakeFiles/cmTC_c19ec.dir/build
+Building C object CMakeFiles/cmTC_c19ec.dir/feature_tests.c.obj
+/usr/local/bin/arm-none-eabi-gcc   -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99    -std=c11 -o CMakeFiles/cmTC_c19ec.dir/feature_tests.c.obj   -c /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_c19ec
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_c19ec.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-gcc -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld  CMakeFiles/cmTC_c19ec.dir/feature_tests.c.obj  -o cmTC_c19ec 
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+
+
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3c538/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_3c538.dir/build.make CMakeFiles/cmTC_3c538.dir/build
+Building C object CMakeFiles/cmTC_3c538.dir/feature_tests.c.obj
+/usr/local/bin/arm-none-eabi-gcc   -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99    -std=c99 -o CMakeFiles/cmTC_3c538.dir/feature_tests.c.obj   -c /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_3c538
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_3c538.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-gcc -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld  CMakeFiles/cmTC_3c538.dir/feature_tests.c.obj  -o cmTC_3c538 
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+
+
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_939cc/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_939cc.dir/build.make CMakeFiles/cmTC_939cc.dir/build
+Building C object CMakeFiles/cmTC_939cc.dir/feature_tests.c.obj
+/usr/local/bin/arm-none-eabi-gcc   -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99    -std=c90 -o CMakeFiles/cmTC_939cc.dir/feature_tests.c.obj   -c /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_939cc
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_939cc.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-gcc -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=gnu99   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld  CMakeFiles/cmTC_939cc.dir/feature_tests.c.obj  -o cmTC_939cc 
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_adbd5/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_adbd5.dir/build.make CMakeFiles/cmTC_adbd5.dir/build
+Building CXX object CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/local/bin/arm-none-eabi-g++    -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11    -v -o CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj -c "/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp"
+Using built-in specs.
+Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/local/bin/arm-none-eabi-g++
+Target: arm-none-eabi
+Configured with: /tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native --libexecdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/lib --infodir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1plus -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7-m/nofp -iprefix /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/ -isysroot /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ /Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m3 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj -g -std=c++11 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//ccfpxf8L.s
+GNU C++11 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)
+	compiled by GNU C version 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1"
+ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi/thumb/v7-m/nofp"
+ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward"
+ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/include"
+ignoring nonexistent directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/usr/local/include"
+ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/include-fixed"
+ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include"
+ignoring nonexistent directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/usr/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/include/newlib-nano
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi/thumb/v7-m/nofp
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include-fixed
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include
+End of search list.
+GNU C++11 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)
+	compiled by GNU C version 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: e337e236c618b3596b0b5fb0dd7f5733
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//ccfpxf8L.s
+GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 2.33.1.20191025
+COMPILER_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m'
+Linking CXX executable cmTC_adbd5
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_adbd5.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-g++  -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld -v CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_adbd5 
+Using built-in specs.
+Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nosys.specs
+rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence
+Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nano.specs
+rename spec link to nano_link
+rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence
+rename spec cpp_unique_options to nano_cpp_unique_options
+COLLECT_GCC=/usr/local/bin/arm-none-eabi-g++
+COLLECT_LTO_WRAPPER=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper
+Target: arm-none-eabi
+Configured with: /tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native --libexecdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/lib --infodir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile
+Thread model: single
+gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 
+COMPILER_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/
+LIBRARY_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-T' '/Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld' '-v' '-o' 'cmTC_adbd5' '-mfloat-abi=soft' '-march=armv7-m'
+ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/collect2 -plugin /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/liblto_plugin.so -plugin-opt=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//cczkh9oU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi -X -o cmTC_adbd5 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crti.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtbegin.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1 -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++_nano -lm --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtend.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtn.o -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-T' '/Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld' '-v' '-o' 'cmTC_adbd5' '-mfloat-abi=soft' '-march=armv7-m'
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/include/newlib-nano]
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1]
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi/thumb/v7-m/nofp]
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward]
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include]
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include-fixed]
+    add: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include]
+  end of search list found
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/include/newlib-nano] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/newlib-nano]
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/c++/9.2.1]
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi/thumb/v7-m/nofp] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/c++/9.2.1/arm-none-eabi/thumb/v7-m/nofp]
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/c++/9.2.1/backward]
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/include]
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include-fixed] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/include-fixed]
+  collapse include dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include]
+  implicit include dirs: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/newlib-nano;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/c++/9.2.1;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/c++/9.2.1/arm-none-eabi/thumb/v7-m/nofp;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/c++/9.2.1/backward;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/include;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/include-fixed;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_adbd5/fast ]
+  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_adbd5.dir/build.make CMakeFiles/cmTC_adbd5.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/usr/local/bin/arm-none-eabi-g++    -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11    -v -o CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj -c "/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp"]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nosys.specs]
+  ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+  ignore line: [Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nano.specs]
+  ignore line: [rename spec link to nano_link]
+  ignore line: [rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence]
+  ignore line: [rename spec cpp_unique_options to nano_cpp_unique_options]
+  ignore line: [COLLECT_GCC=/usr/local/bin/arm-none-eabi-g++]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native --libexecdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/lib --infodir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/cc1plus -isystem =/include/newlib-nano -quiet -v -imultilib thumb/v7-m/nofp -iprefix /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/ -isysroot /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi -D__USES_INITFINI__ /Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m3 -mthumb -mthumb-interwork -mfloat-abi=soft -march=armv7-m -auxbase-strip CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj -g -std=c++11 -version -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -o /var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//ccfpxf8L.s]
+  ignore line: [GNU C++11 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1"]
+  ignore line: [ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi/thumb/v7-m/nofp"]
+  ignore line: [ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward"]
+  ignore line: [ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/include"]
+  ignore line: [ignoring nonexistent directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/include-fixed"]
+  ignore line: [ignoring duplicate directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/../../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include"]
+  ignore line: [ignoring nonexistent directory "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/usr/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/include/newlib-nano]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/arm-none-eabi/thumb/v7-m/nofp]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include/c++/9.2.1/backward]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/include-fixed]
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++11 (GNU Tools for Arm Embedded Processors 9-2019-q4-major) version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (arm-none-eabi)]
+  ignore line: [	compiled by GNU C version 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2), GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: e337e236c618b3596b0b5fb0dd7f5733]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/as -v -march=armv7-m -mthumb-interwork -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj /var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//ccfpxf8L.s]
+  ignore line: [GNU assembler version 2.33.1 (arm-none-eabi) using BFD version (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 2.33.1.20191025]
+  ignore line: [COMPILER_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-v' '-o' 'CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-mfloat-abi=soft' '-march=armv7-m']
+  ignore line: [Linking CXX executable cmTC_adbd5]
+  ignore line: ["/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_adbd5.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/arm-none-eabi-g++  -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld -v CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_adbd5 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nosys.specs]
+  ignore line: [rename spec link_gcc_c_sequence to nosys_link_gcc_c_sequence]
+  ignore line: [Reading specs from /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/nano.specs]
+  ignore line: [rename spec link to nano_link]
+  ignore line: [rename spec link_gcc_c_sequence to nano_link_gcc_c_sequence]
+  ignore line: [rename spec cpp_unique_options to nano_cpp_unique_options]
+  ignore line: [COLLECT_GCC=/usr/local/bin/arm-none-eabi-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper]
+  ignore line: [Target: arm-none-eabi]
+  ignore line: [Configured with: /tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/src/gcc/configure --target=arm-none-eabi --prefix=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native --libexecdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/lib --infodir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/info --mandir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/man --htmldir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/html --pdfdir=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-newlib --with-headers=yes --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/install-native/arm-none-eabi --build=x86_64-apple-darwin10 --host=x86_64-apple-darwin10 --with-gmp=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpfr=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-mpc=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-isl=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-libelf=/tmp/jenkins-GCC-9-pipeline-100_20191030_1572397548/build-native/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-lstdc++ -lm' --with-pkgversion='GNU Tools for Arm Embedded Processors 9-2019-q4-major' --with-multilib-list=rmprofile]
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599] (GNU Tools for Arm Embedded Processors 9-2019-q4-major) ]
+  ignore line: [COMPILER_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/:/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m3' '-mthumb' '-mthumb-interwork' '-ffunction-sections' '-fdata-sections' '-g' '-fno-common' '-fmessage-length=0' '-specs=nosys.specs' '-specs=nano.specs' '-std=c++11' '-T' '/Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld' '-v' '-o' 'cmTC_adbd5' '-mfloat-abi=soft' '-march=armv7-m']
+  link line: [ /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/collect2 -plugin /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/liblto_plugin.so -plugin-opt=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper -plugin-opt=-fresolution=/var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//cczkh9oU.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lg_nano -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc_nano -plugin-opt=-pass-through=-lnosys --sysroot=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi -X -o cmTC_adbd5 /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crti.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtbegin.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1 -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib -L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib -gc-sections --print-memory-usage CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++_nano -lm --start-group -lgcc -lg_nano -lc_nano --end-group --start-group -lgcc -lc_nano -lnosys --end-group --start-group -lgcc -lc_nano -lnosys --end-group /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtend.o /usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtn.o -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld]
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/folders/bl/fctnxfrs0531htjp1mymb0480000gn/T//cczkh9oU.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lg_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc_nano] ==> ignore
+    arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
+    arg [--sysroot=/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi] ==> ignore
+    arg [-X] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_adbd5] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crti.o] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtbegin.o] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp/crt0.o] ==> ignore
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib]
+    arg [-L/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib] ==> dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib]
+    arg [-gc-sections] ==> ignore
+    arg [--print-memory-usage] ==> ignore
+    arg [CMakeFiles/cmTC_adbd5.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lstdc++_nano] ==> lib [stdc++_nano]
+    arg [-lm] ==> lib [m]
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lg_nano] ==> lib [g_nano]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [--end-group] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [-lnosys] ==> lib [nosys]
+    arg [--end-group] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc_nano] ==> lib [c_nano]
+    arg [-lnosys] ==> lib [nosys]
+    arg [--end-group] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtend.o] ==> ignore
+    arg [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp/crtn.o] ==> ignore
+    arg [-T] ==> ignore
+    arg [/Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld] ==> ignore
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib/thumb/v7-m/nofp]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib/thumb/v7-m/nofp] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib/thumb/v7-m/nofp]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib]
+  collapse library dir [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../arm-none-eabi/lib] ==> [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib]
+  implicit libs: [stdc++_nano;m;gcc;g_nano;c_nano;gcc;c_nano;nosys;gcc;c_nano;nosys]
+  implicit dirs: [/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1/thumb/v7-m/nofp;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib/thumb/v7-m/nofp;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc/arm-none-eabi/9.2.1;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/lib/gcc;/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++2a] compiler features compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_92d91/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_92d91.dir/build.make CMakeFiles/cmTC_92d91.dir/build
+Building CXX object CMakeFiles/cmTC_92d91.dir/feature_tests.cxx.obj
+/usr/local/bin/arm-none-eabi-g++    -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11    -std=c++2a -o CMakeFiles/cmTC_92d91.dir/feature_tests.cxx.obj -c /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_92d91
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_92d91.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-g++  -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld  CMakeFiles/cmTC_92d91.dir/feature_tests.cxx.obj  -o cmTC_92d91 
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+
+
+
+
+Detecting CXX [-std=c++17] compiler features compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_860f2/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_860f2.dir/build.make CMakeFiles/cmTC_860f2.dir/build
+Building CXX object CMakeFiles/cmTC_860f2.dir/feature_tests.cxx.obj
+/usr/local/bin/arm-none-eabi-g++    -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11    -std=c++17 -o CMakeFiles/cmTC_860f2.dir/feature_tests.cxx.obj -c /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_860f2
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_860f2.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-g++  -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld  CMakeFiles/cmTC_860f2.dir/feature_tests.cxx.obj  -o cmTC_860f2 
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_35eac/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_35eac.dir/build.make CMakeFiles/cmTC_35eac.dir/build
+Building CXX object CMakeFiles/cmTC_35eac.dir/feature_tests.cxx.obj
+/usr/local/bin/arm-none-eabi-g++    -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11    -std=c++14 -o CMakeFiles/cmTC_35eac.dir/feature_tests.cxx.obj -c /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_35eac
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_35eac.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-g++  -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld  CMakeFiles/cmTC_35eac.dir/feature_tests.cxx.obj  -o cmTC_35eac 
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+
+
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_03ea2/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_03ea2.dir/build.make CMakeFiles/cmTC_03ea2.dir/build
+Building CXX object CMakeFiles/cmTC_03ea2.dir/feature_tests.cxx.obj
+/usr/local/bin/arm-none-eabi-g++    -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11    -std=c++11 -o CMakeFiles/cmTC_03ea2.dir/feature_tests.cxx.obj -c /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_03ea2
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_03ea2.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-g++  -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld  CMakeFiles/cmTC_03ea2.dir/feature_tests.cxx.obj  -o cmTC_03ea2 
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+
+
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_65411/fast 
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_65411.dir/build.make CMakeFiles/cmTC_65411.dir/build
+Building CXX object CMakeFiles/cmTC_65411.dir/feature_tests.cxx.obj
+/usr/local/bin/arm-none-eabi-g++    -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11    -std=c++98 -o CMakeFiles/cmTC_65411.dir/feature_tests.cxx.obj -c /Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_65411
+"/Users/caochang/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/192.5728.100/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E cmake_link_script CMakeFiles/cmTC_65411.dir/link.txt --verbose=1
+/usr/local/bin/arm-none-eabi-g++  -mcpu=cortex-m3  -mthumb -mthumb-interwork -ffunction-sections -fdata-sections     -g -fno-common -fmessage-length=0 -specs=nosys.specs -specs=nano.specs -std=c++11   -Wl,-gc-sections,--print-memory-usage -T /Users/caochang/CLionProjects/CS301ProjectClock/STM32F103RCTx_FLASH.ld  CMakeFiles/cmTC_65411.dir/feature_tests.cxx.obj  -o cmTC_65411 
+Memory region         Used Size  Region Size  %age Used
+             RAM:        1568 B        48 KB      3.19%
+           FLASH:          96 B       256 KB      0.04/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol Reset_Handler; defaulting to 0000000008000000
+%
+
+

@@ -1,0 +1,3 @@
+/Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/caochang/CLionProjects/CS301ProjectClock/cmake-build-debug/CMakeFiles/CS301ProjectClock.elf.dir
