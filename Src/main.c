@@ -59,6 +59,10 @@ uint32_t time_in_sec=0;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void show_analogue(u_int32_t accumulative_second);
+void show_digit(u_int32_t accumulative_second);
+void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day);
+void show_clock(_Bool whether_clock);
+void show_countdown(_Bool whether_countdown);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -115,7 +119,10 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-    show_analogue(69655);
+    show_analogue(3601);
+    show_calendar(2019, 12, 14);
+    show_clock(1);
+    show_countdown(0);
   }
   /* USER CODE END 3 */
 }
@@ -162,11 +169,22 @@ void SystemClock_Config(void)
 // utils
 
 void switch_face(){
-
+    // switch between analogue and digit
 }
 
 void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day){
-
+    // always show calendar at the bottom of screen
+    char tmpStr[30];
+    POINT_COLOR = BLUE;
+    sprintf(tmpStr, "%04hu", year);
+    LCD_ShowString(25, 240, 40, 40, 16, (uint8_t*) tmpStr);
+    LCD_ShowString(60, 240, 20, 40, 16, (uint8_t*)"Y");
+    sprintf(tmpStr, "%02d", month);
+    LCD_ShowString(80, 240, 20, 40, 16, (uint8_t*) tmpStr);
+    LCD_ShowString(100, 240, 20, 40, 16, (uint8_t*)"M");
+    sprintf(tmpStr, "%02d", day);
+    LCD_ShowString(120, 240, 20, 40, 16, (uint8_t*) tmpStr);
+    LCD_ShowString(140, 240, 20, 40, 16, (uint8_t*)"D");
 }
 
 void show_analogue(u_int32_t accumulative_second){
@@ -190,6 +208,7 @@ void show_analogue(u_int32_t accumulative_second){
     y_min = 120 - (int)(65 * cos(a_min));
     x_hour= 120 + (int)(45 * sin(a_hour));
     y_hour= 120 - (int)(45 * cos(a_hour));
+    POINT_COLOR = BLACK;
     LCD_DrawPoint(x0, y0);
     LCD_Draw_Circle(x0, y0, 1);
     LCD_Draw_Circle(x0, y0, 2);
@@ -202,17 +221,52 @@ void show_analogue(u_int32_t accumulative_second){
     LCD_DrawLine(x0, y0, x_hour, y_hour);
     for (int i = 0; i < 12; i++) {
         a_hour= i * 2 * PI / 12;
+        POINT_COLOR = BLACK;
         LCD_DrawLine(120 + (int) (95 * sin(a_hour)), 120 - (int) (95 * cos(a_hour)), 120 + (int) (100 * sin(a_hour)),
                      120 - (int) (100 * cos(a_hour)));
     }
 }
 
 void show_digit(u_int32_t accumulative_second){
+    char tmpStr[30];
     u_int32_t hour = accumulative_second / 3600;
     u_int32_t minute = (accumulative_second % 3600) / 60;
     u_int32_t second = accumulative_second - 3600 * hour - 60 * minute;
-
+    POINT_COLOR = RED;
+    sprintf(tmpStr, "%02lu", hour);
+    LCD_ShowString(20, 95, 50, 50, 24, (uint8_t*) tmpStr);
+    LCD_ShowString(70, 95, 25, 50, 24, (uint8_t*)":");
+    sprintf(tmpStr, "%02lu", minute);
+    LCD_ShowString(95, 95, 25, 50, 24, (uint8_t*) tmpStr);
+    LCD_ShowString(145, 95, 50, 50, 24, (uint8_t*)":");
+    sprintf(tmpStr, "%02lu", second);
+    LCD_ShowString(170, 95, 50, 50, 24, (uint8_t*) tmpStr);
 }
+
+void show_clock(_Bool whether_clock){
+    POINT_COLOR = BLACK;
+    LCD_DrawRectangle(19, 289, 111, 311);
+    if (!whether_clock){
+        LCD_Fill(20, 290, 110, 310, LGRAY);
+    } else {
+        LCD_Fill(20, 290, 110, 310, GREEN);
+    }
+    POINT_COLOR = BLACK;
+    LCD_ShowString(47, 295, 50, 20, 16, (uint8_t*)"clock");
+}
+
+void show_countdown(_Bool whether_countdown){
+    POINT_COLOR = BLACK;
+    LCD_DrawRectangle(129, 289, 221, 311);
+    if (!whether_countdown){
+        LCD_Fill(130, 290, 220, 310, LGRAY);
+    } else {
+        LCD_Fill(130, 290, 220, 310, GREEN);
+    }
+    POINT_COLOR = BLACK;
+    LCD_ShowString(140, 295, 70, 20, 16, (uint8_t*)"countdown");
+}
+
 
 void send_message_invoke(){
     HAL_UART_Transmit(&huart1, (uint8_t *) msg, strlen(msg), HAL_MAX_DELAY);
