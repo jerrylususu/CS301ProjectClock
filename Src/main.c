@@ -384,6 +384,12 @@ void set_year(uint8_t change){
     }
 }
 
+uint8_t year_is_leap(uint16_t year){
+    if(year%4!=0) return 0;
+    if(year%100==0 && year%400!=0) return 0;
+    return 1;
+}
+
 void set_month(uint8_t change){
     if(change==1){
         setting_values[1]++;
@@ -395,9 +401,47 @@ void set_month(uint8_t change){
     if(setting_values[1]==0){
         setting_values[1] = 12;
     }
+
+    if( setting_values[1]==2 && setting_values[2] > 28 ){
+        // if feb, put bay inside
+        setting_values[2] = 28;
+    }
+
+    if( year_is_leap(setting_values[0])  ){
+        // leap_year
+        month_days[2] = 29;
+    } else{
+        // normal year
+        month_days[2] = 28;
+    }
+
+
+    // prevent day exceed
+    if (setting_values[2] > month_days[setting_values[1]]){
+        setting_values[2] = month_days[setting_values[1]];
+    }
+}
+
+uint8_t day_is_valid(uint16_t year, uint8_t month, uint8_t day){
+    if( year_is_leap(year)==1  ){
+        // leap_year
+        month_days[2] = 29;
+    } else{
+        // normal year
+        month_days[2] = 28;
+    }
+
+    if( (1<=day && day<=month_days[month])  ){
+        return 1;
+    } else {
+        return 0;
+    }
+
 }
 
 void set_day(uint8_t change){
+    int before_day = setting_values[2];
+
     if(change==1){
         setting_values[2]++;
     } else {
@@ -405,7 +449,10 @@ void set_day(uint8_t change){
     }
 
     // day validity check
-
+    send_message_invoke();
+    if(day_is_valid(setting_values[0], setting_values[1], setting_values[2])!=1){
+        setting_values[2] = before_day;
+    }
 }
 
 // system interrupt handlers & callbacks
@@ -447,6 +494,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                         switch (sub_mode){
                             case 0: set_year(2); break;
                             case 1: set_month(2); break;
+                            case 2: set_day(2); break;
                         }
                         break;
                 }
@@ -468,6 +516,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                         switch (sub_mode){
                             case 0: set_year(1); break;
                             case 1: set_month(1); break;
+                            case 2: set_day(1); break;
                         }
                         break;
                 }
