@@ -102,7 +102,8 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  update_month_day_arr_by_year(year);
+  init_alarm_countdown();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -110,8 +111,6 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
   LCD_Init();
-    update_month_day_arr_by_year(year);
-    init_alarm_countdown();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
