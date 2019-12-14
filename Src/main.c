@@ -247,8 +247,6 @@ void setting_display(){
 
 }
 
-
-
 void time_display_for_debug(){
 
 //    LCD_DrawRectangle(0, 30, 240, 290);
@@ -361,6 +359,22 @@ void update_screen(){
 //    HAL_Delay(2000);
 }
 
+// change things
+
+void set_year(uint8_t change){
+    if(change==1){
+        setting_values[0]++;
+    } else {
+        setting_values[0]--;
+    }
+
+    if(setting_values[0]<2012){
+        setting_values[0] = 2012;
+    } else if (setting_values[0] > 2021){
+        setting_values[0] = 2021;
+    }
+}
+
 // system interrupt handlers & callbacks
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
@@ -397,6 +411,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                         break;
                     case 2: // decrease current value
                         //
+                        if(sub_mode==0){
+                            set_year(2);
+                        }
                         break;
                 }
 
@@ -414,6 +431,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                         break;
                     case 2: // increase current value
                         //
+                        if(sub_mode==0){
+                            set_year(1);
+                        }
                         break;
                 }
 
