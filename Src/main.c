@@ -70,10 +70,35 @@ uint8_t month_days[] = {0, 31, 30, 28, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // d
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+
+// date time util
+uint8_t year_is_leap(uint16_t year);
+void update_month_day_arr_by_year(uint16_t year);
+void move_day_forward();
+uint8_t day_is_valid(uint16_t year, uint8_t month, uint8_t day);
+
+// settings related
+void freeze_values_for_setting();
+void save_set_value_back();
+void setting_highlight_disp(int i);
+
+// display
 void setting_display();
-void send_message_invoke();
 void time_display_for_debug();
-void set_month_day_arr_by_year(uint16_t year);
+
+// utils
+void send_message_invoke();
+
+// test only - deprecated
+void update_screen();
+
+// really set
+void set_year(uint8_t change);
+void set_month(uint8_t change);
+void set_day(uint8_t change);
+void set_hour(uint8_t change);
+void set_minute(uint8_t change);
+void set_second(uint8_t change);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -106,7 +131,7 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
   LCD_Init();
-  set_month_day_arr_by_year(year);
+    update_month_day_arr_by_year(year);
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -186,14 +211,13 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 
 // date time util
-
 uint8_t year_is_leap(uint16_t year){
     if(year%4!=0) return 0;
     if(year%100==0 && year%400!=0) return 0;
     return 1;
 }
 
-void set_month_day_arr_by_year(uint16_t year){
+void update_month_day_arr_by_year(uint16_t year){
     if(year_is_leap(year)==1){
         // leap_year
         month_days[2] = 29;
@@ -202,10 +226,8 @@ void set_month_day_arr_by_year(uint16_t year){
     }
 }
 
-
-// move day forward
 void move_day_forward(){
-    set_month_day_arr_by_year(year);
+    update_month_day_arr_by_year(year);
     day++;
     if(day > month_days[month]){
         day = 1;
@@ -216,6 +238,19 @@ void move_day_forward(){
         year++;
     }
 }
+
+uint8_t day_is_valid(uint16_t year, uint8_t month, uint8_t day){
+    update_month_day_arr_by_year(year);
+
+    if( (1<=day && day<=month_days[month])  ){
+        return 1;
+    } else {
+        return 0;
+    }
+
+}
+
+// settings related
 
 // freeze values for entering setting mode
 void freeze_values_for_setting(){
@@ -241,16 +276,7 @@ void save_set_value_back(){
     time_in_sec = (setting_values[3] * 60 * 60 + setting_values[4] * 60 + setting_values[5]);
 }
 
-uint8_t day_is_valid(uint16_t year, uint8_t month, uint8_t day){
-    set_month_day_arr_by_year(year);
 
-    if( (1<=day && day<=month_days[month])  ){
-        return 1;
-    } else {
-        return 0;
-    }
-
-}
 
 void setting_highlight_disp(int i){
     if(sub_mode==i){
@@ -447,7 +473,7 @@ void set_month(uint8_t change){
         setting_values[2] = 28;
     }
 
-    set_month_day_arr_by_year(setting_values[0]);
+    update_month_day_arr_by_year(setting_values[0]);
 
     // prevent day exceed
     if (setting_values[2] > month_days[setting_values[1]]){
