@@ -53,12 +53,19 @@ char msg[100];
 char time_text[20];
 uint32_t time_in_sec=0;
 uint8_t currentBackground = 6;
+
+uint16_t year=2019;
+uint8_t month=12;
+uint8_t day=14;
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+void setting_display();
+void send_message_invoke();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -114,6 +121,8 @@ int main(void)
       POINT_COLOR = BLACK;
       LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) "        ");
       LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) time_text);
+//      LCD_ShowString(220,300, 200,16,16, (uint8_t*) "H");
+        setting_display();
       HAL_Delay(500);
     /* USER CODE BEGIN 3 */
 
@@ -159,6 +168,22 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+// display the setting page
+void setting_display(){
+    LCD_ShowString(60, 50, 200, 16, 16, (uint8_t*)"Date/Time Set");
+    LCD_ShowString(60, 70, 100, 16, 16, (uint8_t*) "YYYY");
+    LCD_ShowString(100, 70, 100, 16, 16, (uint8_t*) "MM");
+    LCD_ShowString(120, 70, 100, 16, 16, (uint8_t*) "DD");
+    LCD_ShowString(60, 90, 100, 16, 16, (uint8_t*) "HH");
+    LCD_ShowString(80, 90, 100, 16, 16, (uint8_t*) "mm");
+    LCD_ShowString(100, 90, 100, 16, 16, (uint8_t*) "ss");
+
+
+
+
+}
+
 
 // utils
 
