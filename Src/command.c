@@ -29,7 +29,7 @@ extern my_time countdown[4];
 extern uint32_t time_in_sec;
 
 
-const unsigned char* set_comm[] = {"time", "alarm", "countdown"};
+const unsigned char* set_comm[] = {"time", "alarm", "countdown", "hour", "minute","second","year","month","day"};
 const unsigned char* lc_comm[] = {"alarm", "countdown"};
 
 void send_message() {
@@ -331,6 +331,51 @@ void cancel(unsigned char *s, int type) {
     }
 
 }
+
+void set_rest(unsigned char *s, uint8_t type){
+    freeze_values_for_setting();
+
+    switch(type){
+        case 3: // hour
+            s += 4;
+            break;
+        case 4: // minute
+            s += 6;
+            break;
+        case 5: // second
+            s += 6;
+            break;
+        case 6: // year
+            s += 4;
+            break;
+        case 7: // month
+            s += 5;
+            break;
+        case 8: // day
+            s += 3;
+            break;
+    }
+
+    s++;
+
+    uint32_t val = 0;
+
+
+    if(type==6){ // year, 4 digit
+        for(uint8_t i=0;i<4;i++){
+            if(s[i]<'0' || s[i]>'9') break;
+            val *= 10;
+            val += s[i] - '0';
+        }
+    } else { // other, 2 digit
+        for(uint8_t i=0;i<2;i++){
+            if(s[i]<'0' || s[i]>'9') break;
+            val = val * 10 + s[i] - '0';
+        }
+    }
+
+}
+
 void parse_command(unsigned char *s) {
     uint8_t  len = strlen(s);
     unsigned char *p = s;
@@ -342,18 +387,20 @@ void parse_command(unsigned char *s) {
                     SEND_VALID("set");
                     p += 4;
                     int i;
-                    for (i = 0; i < 3; i++) {
+                    for (i = 0; i < 9; i++) {
                         if (parse_literal(p, set_comm[i])) {
                             if(i == 0) {
                                 set_time(p);
                             }
-                            else {
+                            else if (i==1 || i==2) {
                                 set_alarm_count(p, i);
+                            } else {
+                                set_rest(p,i);
                             }
                             break;
                         }
                     }
-                    if (i == 3) {
+                    if (i == 9) {
                         SEND_INVALID();
                     }
                 }
