@@ -185,7 +185,7 @@ void set_time(unsigned char *s) {
 
 
 
-
+// type 1: alarm, 2: countdown
 void set_alarm_count(unsigned char *s, uint8_t type) {
     uint8_t len = strlen(s);
     unsigned char time_str[100];
@@ -207,8 +207,9 @@ void set_alarm_count(unsigned char *s, uint8_t type) {
 
 }
 
+// type: 0 alarm, 1 countdown
 void list(int type) {
-    if (type == 1) {
+    if (type == 0) {
         SEND_VALID("list alarm");
     }
     else {
@@ -217,6 +218,7 @@ void list(int type) {
 
 }
 
+// type: 0 alarm, 1 countdown
 void cancel(unsigned char *s, int type) {
     uint8_t len = strlen(s);
     unsigned char time_str[100];
