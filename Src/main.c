@@ -61,6 +61,8 @@ uint8_t day=14;
 uint32_t time_when_start_setting;
 uint8_t mode=0; // 0: sim clock disp, 1: digital clock disp, 2: setting
 uint8_t sub_mode=0; // submode setting
+
+int setting_values[6]; // values to be set in setting mode
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -171,35 +173,53 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
-// display the setting page
-void setting_display(){
-    char tmpStr[30];
-    LCD_ShowString(60, 50, 200, 16, 16, (uint8_t*)"Date/Time Set");
-    LCD_ShowString(20, 250, 300, 16, 16, (uint8_t*)"[Next] [+] [-]");
-
-
-    // display date
-    sprintf(tmpStr, "%04d", year);
-    LCD_ShowString(60, 70, 100, 16, 16, (uint8_t*) tmpStr);
-    sprintf(tmpStr, "%02d", month);
-    LCD_ShowString(100, 70, 100, 16, 16, (uint8_t*) tmpStr);
-    sprintf(tmpStr, "%02d", day);
-    LCD_ShowString(120, 70, 100, 16, 16, (uint8_t*) tmpStr);
-
+// freeze values for entering setting mode
+void freeze_values_for_setting(){
     // prepare frozen time
     uint8_t hour, minute, second;
     hour = time_in_sec / (60 * 60);
     minute = time_in_sec / 60  - hour*60;
     second = time_in_sec % 60;
 
+    // put things into setting values
+    setting_values[0] = year;
+    setting_values[1] = month;
+    setting_values[2] = day;
+    setting_values[3] = hour;
+    setting_values[4] = minute;
+    setting_values[5] = second;
+}
+
+// display the setting page
+// TODO: highlight the value being set.
+void setting_display(){
+    char tmpStr[30];
+    // print hints
+    LCD_ShowString(60, 50, 200, 16, 16, (uint8_t*)"Date/Time Set");
+    LCD_ShowString(20, 250, 300, 16, 16, (uint8_t*)"[Next] [+] [-]");
+
+
+    // display date
+    sprintf(tmpStr, "%04d", setting_values[0]);
+    LCD_ShowString(60, 70, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%02d", setting_values[1]);
+    LCD_ShowString(100, 70, 100, 16, 16, (uint8_t*) tmpStr);
+    sprintf(tmpStr, "%02d", setting_values[2]);
+    LCD_ShowString(120, 70, 100, 16, 16, (uint8_t*) tmpStr);
+
+
+
     // display time
-    sprintf(tmpStr, "%02d", hour);
+    sprintf(tmpStr, "%02d", setting_values[3]);
     LCD_ShowString(60, 90, 100, 16, 16, (uint8_t*) tmpStr);
-    sprintf(tmpStr, "%02d", minute);
+    sprintf(tmpStr, "%02d", setting_values[4]);
     LCD_ShowString(80, 90, 100, 16, 16, (uint8_t*) tmpStr);
-    sprintf(tmpStr, "%02d", second);
+    sprintf(tmpStr, "%02d", setting_values[5]);
     LCD_ShowString(100, 90, 100, 16, 16, (uint8_t*) tmpStr);
 
+    // debug show current sub mode
+    sprintf(tmpStr, "sub=%d", sub_mode);
+    LCD_ShowString(0, 300, 200, 16, 16, (uint8_t*) tmpStr);
 
 }
 
@@ -303,6 +323,37 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     switch (GPIO_Pin) {
         case KEY0_Pin:
             if (HAL_GPIO_ReadPin(KEY0_GPIO_Port, KEY0_Pin) == GPIO_PIN_RESET) {
+                switch (mode){
+                    case 0:
+                    case 1: // disable alarm/countdown notification
+                        break;
+                    case 2: // decrease current value
+                        //
+                        break;
+                }
+
+            }
+            break;
+        case KEY1_Pin:
+            if (HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin) == GPIO_PIN_RESET) {
+                update_screen();
+
+                switch (mode){
+                    case 0:
+                    case 1: // enter setting mode in both sim/digi clock
+                        mode = 2;
+                        freeze_values_for_setting();
+                        break;
+                    case 2: // increase current value
+                        //
+                        break;
+                }
+
+            }
+            break;
+        case KEY_WK_Pin:
+            if (HAL_GPIO_ReadPin(KEY_WK_GPIO_Port, KEY_WK_Pin) == GPIO_PIN_SET) {
+
                 update_screen();
 
                 switch (mode){
@@ -324,36 +375,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
             }
             break;
-        case KEY1_Pin:
-            if (HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin) == GPIO_PIN_RESET) {
-                update_screen();
-
-                switch (mode){
-                    case 0:
-                    case 1: // enter setting mode in both sim/digi clock
-                        mode = 2;
-                        break;
-                    case 2: // increase current value
-                        //
-                        break;
-                }
-
-            }
-            break;
-        case KEY_WK_Pin:
-            if (HAL_GPIO_ReadPin(KEY_WK_GPIO_Port, KEY_WK_Pin) == GPIO_PIN_SET) {
-
-                switch (mode){
-                    case 0:
-                    case 1: // disable alarm/countdown notification
-                        break;
-                    case 2: // decrease current value
-                        //
-                        break;
-                }
-
-            }
-            break;
         default:
             break;
     }
@@ -368,10 +389,12 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
     if(htim->Instance==TIM3){
-        sprintf(time_text, "sec=%d", time_in_sec);
+//        sprintf(time_text, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
+        sprintf(time_text, "sec=%lu", time_in_sec);
         time_in_sec++;
 
-        sprintf(msg, "sec=%d", time_in_sec);
+        sprintf(msg, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
+//        sprintf(msg, "sec=%lu", time_in_sec);
         send_message_invoke();
     }
 }
