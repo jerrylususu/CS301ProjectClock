@@ -34,11 +34,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-typedef struct {
-    uint8_t hour;
-    uint8_t minute;
-    uint8_t second;
-} my_time;
+
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/

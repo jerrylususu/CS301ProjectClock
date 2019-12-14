@@ -23,6 +23,10 @@ extern int setting_values[6];
 int date_to_set[3];
 int time_to_set[3];
 
+extern my_time alarm[4];
+extern my_time countdown[4];
+
+
 const unsigned char* set_comm[] = {"time", "alarm", "countdown"};
 const unsigned char* lc_comm[] = {"alarm", "countdown"};
 
