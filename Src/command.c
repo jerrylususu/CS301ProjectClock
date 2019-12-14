@@ -223,9 +223,19 @@ void set_alarm_count(unsigned char *s, uint8_t type) {
                 alarm[id].minute = time_to_set[1];
                 alarm[id].second = time_to_set[2];
             } else{ // countdown
-                countdown[id].hour = time_to_set[0];
-                countdown[id].minute = time_to_set[1];
-                countdown[id].second = time_to_set[2];
+                // do time conversion
+                uint32_t countdown_value = time_to_set[0] * 60 * 60 + time_to_set[1] * 60 + time_to_set[2];
+                uint32_t target = countdown_value + time_in_sec;
+                if(target>86400) target -= 86400;
+
+                uint8_t hour, minute, second;
+                hour = target / (60 * 60);
+                minute = target / 60  - hour*60;
+                second = target % 60;
+
+                countdown[id].hour = hour;
+                countdown[id].minute = minute;
+                countdown[id].second = second;
             }
         }
     }
