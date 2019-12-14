@@ -198,6 +198,14 @@ void freeze_values_for_setting(){
     setting_values[5] = second;
 }
 
+void setting_highlight_disp(int i){
+    if(sub_mode==i){
+        POINT_COLOR = RED;
+    } else{
+        POINT_COLOR = BLACK;
+    }
+}
+
 // display the setting page
 // TODO: highlight the value being set.
 void setting_display(){
@@ -206,25 +214,36 @@ void setting_display(){
     char tmpStr[30];
     // print hints
     LCD_ShowString(60, 50, 200, 16, 16, (uint8_t*)"Date/Time Set");
+    if(mode==0){
+        LCD_ShowString(60, 30, 200, 16, 16, (uint8_t*)"SIM");
+    } else {
+        LCD_ShowString(60, 30, 200, 16, 16, (uint8_t*)"DIGI");
+    }
     LCD_ShowString(20, 250, 300, 16, 16, (uint8_t*)"[Next] [+] [-]");
 
 
     // display date
     sprintf(tmpStr, "%04d", setting_values[0]);
+    setting_highlight_disp(0);
     LCD_ShowString(60, 70, 100, 16, 16, (uint8_t*) tmpStr);
     sprintf(tmpStr, "%02d", setting_values[1]);
+    setting_highlight_disp(1);
     LCD_ShowString(100, 70, 100, 16, 16, (uint8_t*) tmpStr);
     sprintf(tmpStr, "%02d", setting_values[2]);
+    setting_highlight_disp(2);
     LCD_ShowString(120, 70, 100, 16, 16, (uint8_t*) tmpStr);
 
 
 
     // display time
     sprintf(tmpStr, "%02d", setting_values[3]);
+    setting_highlight_disp(3);
     LCD_ShowString(60, 90, 100, 16, 16, (uint8_t*) tmpStr);
     sprintf(tmpStr, "%02d", setting_values[4]);
+    setting_highlight_disp(4);
     LCD_ShowString(80, 90, 100, 16, 16, (uint8_t*) tmpStr);
     sprintf(tmpStr, "%02d", setting_values[5]);
+    setting_highlight_disp(5);
     LCD_ShowString(100, 90, 100, 16, 16, (uint8_t*) tmpStr);
 
     // debug show current sub mode
@@ -232,6 +251,8 @@ void setting_display(){
     LCD_ShowString(0, 300, 200, 16, 16, (uint8_t*) tmpStr);
 
 }
+
+
 
 void time_display_for_debug(){
 
