@@ -59,6 +59,9 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 
+// alarm, countdown
+void init_alarm_countdown();
+
 // date time util
 uint8_t year_is_leap(uint16_t year);
 void update_month_day_arr_by_year(uint16_t year);

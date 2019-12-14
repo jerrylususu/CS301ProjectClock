@@ -111,6 +111,7 @@ int main(void)
   /* USER CODE BEGIN SysInit */
   LCD_Init();
     update_month_day_arr_by_year(year);
+    init_alarm_countdown();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -188,6 +189,14 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+// alarm, countdown
+void init_alarm_countdown(){
+    for(int i=0;i<4;i++){
+        alarm[i].hour = 255;
+        countdown[i].hour = 255;
+    }
+}
 
 // date time util
 uint8_t year_is_leap(uint16_t year){

@@ -26,6 +26,8 @@ int time_to_set[3];
 extern my_time alarm[4];
 extern my_time countdown[4];
 
+extern uint32_t time_in_sec;
+
 
 const unsigned char* set_comm[] = {"time", "alarm", "countdown"};
 const unsigned char* lc_comm[] = {"alarm", "countdown"};
@@ -204,10 +206,28 @@ void set_alarm_count(unsigned char *s, uint8_t type) {
         sprintf(msg,"set_id = %d\r\n", id);
         send_message();
 
+        if(!(0<=id && id<=3)){ // id valid check
+            sprintf(msg,"invalid id\r\n");
+            send_message();
+            SEND_INVALID();
+            return;
+        }
+
         strncpy(time_str, s + offset + 2, 6);
         sprintf(msg,"Time String :%s\r\n", time_str);
         send_message();
-        parse_time_str(time_str);
+        uint8_t ret = parse_time_str(time_str);
+        if(ret==0){ // valid
+            if(type==1){ // alarm
+                alarm[id].hour = time_to_set[0];
+                alarm[id].minute = time_to_set[1];
+                alarm[id].second = time_to_set[2];
+            } else{ // countdown
+                countdown[id].hour = time_to_set[0];
+                countdown[id].minute = time_to_set[1];
+                countdown[id].second = time_to_set[2];
+            }
+        }
     }
     else {
         SEND_INVALID();
@@ -219,11 +239,38 @@ void set_alarm_count(unsigned char *s, uint8_t type) {
 void list(int type) {
     if (type == 0) {
         SEND_VALID("list alarm");
+
+        for(uint8_t i=0;i<4;i++){
+            if(alarm[i].hour<24){ // enabled
+                sprintf(msg, "Alarm #%d - %02d:%02d:%02d\r\n", i, alarm[i].hour, alarm[i].minute, alarm[i].second);
+            } else { // disabled
+                sprintf(msg, "Alarm #%d - [DISABLED]\r\n",i);
+            }
+            send_message();
+        }
+
     }
     else {
         SEND_VALID("list countdown");
-    }
 
+        for(uint8_t i=0;i<4;i++){
+            if(countdown[i].hour<24){ // enabled
+                uint32_t countdown_value = countdown[i].hour * 60 * 60 + countdown[i].minute * 60 + countdown[i].second;
+                uint32_t diff = countdown_value - time_in_sec;
+                if(diff<0) diff += 86400;
+
+                uint8_t hour, minute, second;
+                hour = diff / (60 * 60);
+                minute = diff / 60  - hour*60;
+                second = diff % 60;
+
+                sprintf(msg, "Countdown #%d - %02d:%02d:%02d remaining\r\n", i, hour, minute, second);
+            } else { // disabled
+                sprintf(msg, "Countdown #%d - [DISABLED]\r\n",i);
+            }
+            send_message();
+        }
+    }
 }
 
 // type: 0 alarm, 1 countdown
@@ -236,8 +283,23 @@ void cancel(unsigned char *s, int type) {
     uint8_t offset = type == 0 ? 6 : 10;
     if (len >= offset + 1) {
         strncpy(time_str, s + offset, 1);
-        sprintf(msg, "ID : %s\r\n", time_str);
+        uint8_t id = time_str[0] - '0';
+        sprintf(msg, "ID : %d\r\n", id);
         send_message();
+
+        if(!(0<=id && id<=3)){
+            sprintf(msg, "invalid id\r\n");
+            send_message();
+            SEND_INVALID();
+            return;
+        }
+
+        if(type==0){ // alarm
+            alarm[id].hour = 255;
+        } else { // countdown
+            countdown[id].hour = 255;
+        }
+
     }
     else {
         SEND_INVALID();
