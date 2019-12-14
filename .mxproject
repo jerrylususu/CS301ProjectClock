@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Inc
+HeaderPath=F:/git-repo/CS301ProjectClock/Inc
 HeaderFiles=gpio.h;sys.h;usart.h;stm32f1xx_it.h;stm32f1xx_hal_conf.h;main.h;tim.h;
-SourcePath=C:/Users/jerry/Desktop/mytmp/CS301ProjectClock/Src
+SourcePath=F:/git-repo/CS301ProjectClock/Src
 SourceFiles=gpio.c;sys.c;usart.c;stm32f1xx_it.c;stm32f1xx_hal_msp.c;main.c;tim.c;
 
 [PreviousLibFiles]
