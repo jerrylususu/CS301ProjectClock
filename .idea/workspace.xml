@@ -11,9 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7d6266-a2ce-4b91-9493-f816a6ceb33e" name="Default Changelist" comment="move_day_forward done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ff7d6266-a2ce-4b91-9493-f816a6ceb33e" name="Default Changelist" comment="move_day_forward done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Src" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -83,7 +82,7 @@
       <workItem from="1576077540299" duration="1778000" />
       <workItem from="1576290661470" duration="410000" />
       <workItem from="1576291093777" duration="9730000" />
-      <workItem from="1576302382301" duration="1723000" />
+      <workItem from="1576302382301" duration="2028000" />
     </task>
     <task id="LOCAL-00001" summary="add LED base">
       <created>1576027531625</created>
@@ -302,6 +301,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576304298913" />
+    <state x="87" y="32" width="1785" height="947" key="MergeDialog" timestamp="1576305875231">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="87" y="32" width="1785" height="947" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576305875231" />
+    <state x="669" y="235" key="MultipleFileMergeDialog" timestamp="1576305877879">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="235" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576305877879" />
+    <state x="461" y="161" key="SettingsEditor" timestamp="1576305669315">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576305669315" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576302919882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -310,14 +321,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576302383392" />
-    <state x="708" y="310" key="git4idea.merge.GitMergeDialog" timestamp="1576305625859">
+    <state x="708" y="310" key="git4idea.merge.GitMergeDialog" timestamp="1576305678436">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="708" y="310" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576305625859" />
-    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup" timestamp="1576305620134">
+    <state x="708" y="310" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576305678436" />
+    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup" timestamp="1576305673987">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-2257" y="-751" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-3840.-1066.2560.1400@-3840.-1066.2560.1400" timestamp="1576077796259" />
-    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576305620134" />
+    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576305673987" />
   </component>
 </project>
