@@ -34,7 +34,11 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-
+typedef struct {
+    uint8_t hour;
+    uint8_t minute;
+    uint8_t second;
+} my_time;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/
@@ -67,6 +71,12 @@ uint8_t sub_mode=0; // submode setting
 int setting_values[6]; // values to be set in setting mode
 
 uint8_t month_days[] = {0, 31, 30, 28, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // days in month
+
+uint8_t current_ringing_alarm, current_ringing_countdown;
+uint8_t alarm_ringing, countdown_ringing;
+
+my_time alarm[4];
+my_time countdown[4];
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
