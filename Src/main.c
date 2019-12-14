@@ -198,6 +198,13 @@ void freeze_values_for_setting(){
     setting_values[5] = second;
 }
 
+void save_set_value_back(){
+    year = setting_values[0];
+    month = setting_values[1];
+    day = setting_values[2];
+    time_in_sec = (setting_values[3] * 60 * 60 + setting_values[4] * 60 + setting_values[5]);
+}
+
 void setting_highlight_disp(int i){
     if(sub_mode==i){
         POINT_COLOR = RED;
@@ -455,6 +462,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                         if(sub_mode<5){ // need to set next
                             sub_mode++; // move to next
                         } else { // finished setting
+                            save_set_value_back(); // save values back
                             sub_mode = 0;
                             mode = 0; // back to sim
                         }
@@ -475,6 +483,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     send_message_invoke();
 }
 
+// TODO: move forward date!
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
     if(htim->Instance==TIM3){
 //        sprintf(time_text, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
