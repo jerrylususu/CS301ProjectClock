@@ -29,6 +29,7 @@
 #include "lcd.h"
 #include <stdio.h>
 #include <string.h>
+#include "command.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -53,6 +54,7 @@ char msg[100];
 char time_text[20];
 uint32_t time_in_sec=0;
 uint8_t currentBackground = 6;
+/* USER CODE END PV */
 
 uint16_t year=2019;
 uint8_t month=12;
@@ -65,7 +67,6 @@ uint8_t sub_mode=0; // submode setting
 int setting_values[6]; // values to be set in setting mode
 
 uint8_t month_days[] = {0, 31, 30, 28, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // days in month
-/* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
@@ -538,7 +539,9 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         static unsigned char uLength = 0;
         if(rxBuffer[0] == '\n')
         {
-            HAL_UART_Transmit(&huart1, uRx_Data, uLength, 0xffff);
+            parse_command(uRx_Data);
+            memset(uRx_Data, 0 , sizeof(uRx_Data));
+            //HAL_UART_Transmit(&huart1, uRx_Data, uLength, 0xffff);
             uLength = 0;
         }
         else
@@ -639,7 +642,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     send_message_invoke();
 }
 
-// TODO: move forward date!
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
     if(htim->Instance==TIM3){
 //        sprintf(time_text, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
