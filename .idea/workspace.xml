@@ -83,7 +83,7 @@
       <workItem from="1576077540299" duration="1778000" />
       <workItem from="1576290661470" duration="410000" />
       <workItem from="1576291093777" duration="9730000" />
-      <workItem from="1576302382301" duration="521000" />
+      <workItem from="1576302382301" duration="1723000" />
     </task>
     <task id="LOCAL-00001" summary="add LED base">
       <created>1576027531625</created>
@@ -278,26 +278,30 @@
     </state>
     <state x="-3148" y="-917" key="CommitChangelistDialog2/0.0.1920.1040/-3840.-1066.2560.1400@-3840.-1066.2560.1400" timestamp="1576079256954" />
     <state x="387" y="111" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576302799623" />
+    <state x="184" y="85" key="DiffContextDialog" timestamp="1576305635061">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="85" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576305635061" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576027019764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576027019764" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1576302360235">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1576304298913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576302360235" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1576302360235">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576304298913" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1576304298913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576302360235" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1576302360234">
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576304298913" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1576304298912">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576302360234" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1576302360235">
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576304298912" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1576304298913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576302360235" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576304298913" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1576302919882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -306,10 +310,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576302383392" />
-    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup" timestamp="1576302917137">
+    <state x="708" y="310" key="git4idea.merge.GitMergeDialog" timestamp="1576305625859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="708" y="310" key="git4idea.merge.GitMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576305625859" />
+    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup" timestamp="1576305620134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-2257" y="-751" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-3840.-1066.2560.1400@-3840.-1066.2560.1400" timestamp="1576077796259" />
-    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576302917137" />
+    <state x="1187" y="234" width="672" height="504" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576305620134" />
   </component>
 </project>
