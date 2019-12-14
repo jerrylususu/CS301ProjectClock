@@ -9,7 +9,7 @@
 #include "../Inc/command.h"
 #define SEND_VALID(s)   do {\
                             sprintf(msg, "Valid command %s\r\n", s);\
-                            send_message(); \
+                            /*send_message()*/; \
                         }while(0);
 
 #define SEND_INVALID()   do {\
@@ -89,8 +89,8 @@ uint8_t parse_date_str(unsigned char *s) {
     }
 
     if (flag) {
-        sprintf(msg, "%d-%d-%d\r\n", time[0], time[1], time[2]);
-        send_message();
+//        sprintf(msg, "%d-%d-%d\r\n", time[0], time[1], time[2]);
+//        send_message();
     }
 
     if (day_is_valid(time[0], time[1], time[2])!=1) {
@@ -143,8 +143,8 @@ uint8_t parse_time_str(unsigned char *s) {
         }
     }
     if (flag) {
-        sprintf(msg, "%d:%d:%d\r\n", time[0], time[1], time[2]);
-        send_message();
+//        sprintf(msg, "%d:%d:%d\r\n", time[0], time[1], time[2]);
+//        send_message();
     }
 
     if(time_is_valid(time[0], time[1], time[2])!=1){
@@ -169,8 +169,8 @@ void set_time(unsigned char *s) {
     if (len >= 5 + 14) {
         SEND_VALID("time length");
         strncpy(time_str, s + 5, 14);
-        sprintf(msg, "Time String : %s\r\n", time_str);
-        send_message();
+//        sprintf(msg, "Time String : %s\r\n", time_str);
+//        send_message();
         uint8_t ret1 = parse_date_str(time_str);
         uint8_t ret2 = parse_time_str(time_str + 8);
         if( (ret1==0) && (ret2==0) ){ // both date, time valid
@@ -203,8 +203,8 @@ void set_alarm_count(unsigned char *s, uint8_t type) {
         SEND_VALID("time length");
         uint8_t id = s[offset] - '0';
 
-        sprintf(msg,"set_id = %d\r\n", id);
-        send_message();
+//        sprintf(msg,"set_id = %d\r\n", id);
+//        send_message();
 
         if(!(0<=id && id<=3)){ // id valid check
             sprintf(msg,"invalid id\r\n");
@@ -214,8 +214,8 @@ void set_alarm_count(unsigned char *s, uint8_t type) {
         }
 
         strncpy(time_str, s + offset + 2, 6);
-        sprintf(msg,"Time String :%s\r\n", time_str);
-        send_message();
+//        sprintf(msg,"Time String :%s\r\n", time_str);
+//        send_message();
         uint8_t ret = parse_time_str(time_str);
         if(ret==0){ // valid
             if(type==1){ // alarm
@@ -309,8 +309,8 @@ void cancel(unsigned char *s, int type) {
     if (len >= offset + 1) {
         strncpy(time_str, s + offset, 1);
         uint8_t id = time_str[0] - '0';
-        sprintf(msg, "ID : %d\r\n", id);
-        send_message();
+//        sprintf(msg, "ID : %d\r\n", id);
+//        send_message();
 
         if(!(0<=id && id<=3)){
             sprintf(msg, "invalid id\r\n");

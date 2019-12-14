@@ -145,9 +145,9 @@ int main(void)
       LCD_Clear(WHITE);
     /* USER CODE END WHILE */
 //        sprintf(m, "hello, y=%d", y++);
-      POINT_COLOR = BLACK;
-      LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) "        ");
-      LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) time_text);
+//      POINT_COLOR = BLACK;
+//      LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) "        ");
+//      LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) time_text);
 //      LCD_ShowString(220,300, 200,16,16, (uint8_t*) "H");
 //        setting_display();
 
@@ -381,8 +381,8 @@ void setting_display(){
     LCD_ShowString(100, 90, 100, 16, 16, (uint8_t*) tmpStr);
 
     // debug show current sub mode
-    sprintf(tmpStr, "sub=%d", sub_mode);
-    LCD_ShowString(0, 300, 200, 16, 16, (uint8_t*) tmpStr);
+//    sprintf(tmpStr, "sub=%d", sub_mode);
+//    LCD_ShowString(0, 300, 200, 16, 16, (uint8_t*) tmpStr);
 
 }
 
@@ -450,15 +450,6 @@ void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day){
     POINT_COLOR = BLUE;
     sprintf(tmpStr, "%04d / %02d / %02d", year, month, day);
     LCD_ShowString(60, 240, 140, 30, 16, (uint8_t*) tmpStr);
-//    sprintf(tmpStr, "%04hu", year);
-//    LCD_ShowString(25, 240, 40, 40, 16, (uint8_t*) tmpStr);
-//    LCD_ShowString(60, 240, 20, 40, 16, (uint8_t*)"/");
-//    sprintf(tmpStr, "%02d", month);
-//    LCD_ShowString(80, 240, 20, 40, 16, (uint8_t*) tmpStr);
-//    LCD_ShowString(100, 240, 20, 40, 16, (uint8_t*)"/");
-//    sprintf(tmpStr, "%02d", day);
-//    LCD_ShowString(120, 240, 20, 40, 16, (uint8_t*) tmpStr);
-//    LCD_ShowString(140, 240, 20, 40, 16, (uint8_t*)"/");
 }
 
 void show_analogue(u_int32_t accumulative_second){
@@ -509,14 +500,6 @@ void show_digit(u_int32_t accumulative_second){
     POINT_COLOR = RED;
     sprintf(tmpStr, "%02d:%02d:%02d", hour, minute, second);
     LCD_ShowString(70,95,220,180,24, tmpStr);
-//    sprintf(tmpStr, "%02lu", hour);
-//    LCD_ShowString(20, 95, 50, 50, 24, (uint8_t*) tmpStr);
-//    LCD_ShowString(70, 95, 25, 50, 24, (uint8_t*)":");
-//    sprintf(tmpStr, "%02lu", minute);
-//    LCD_ShowString(95, 95, 25, 50, 24, (uint8_t*) tmpStr);
-//    LCD_ShowString(145, 95, 50, 50, 24, (uint8_t*)":");
-//    sprintf(tmpStr, "%02lu", second);
-//    LCD_ShowString(170, 95, 50, 50, 24, (uint8_t*) tmpStr);
 }
 
 void show_alarm(_Bool whether_alarm){
@@ -753,9 +736,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
         // check for alarm and countdown
         check_for_alarm_countdown();
 
-        sprintf(msg, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
+//        sprintf(msg, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
 //        sprintf(msg, "sec=%lu", time_in_sec);
-        send_message_invoke();
+//        send_message_invoke();
     }
 }
 
