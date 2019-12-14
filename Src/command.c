@@ -10,6 +10,7 @@
                             sprintf(msg, "Valid command %s\r\n", s);\
                             send_message(); \
                         }while(0);
+
 #define SEND_INVALID()   do {\
                             sprintf(msg, "Invalid command\r\n");\
                             send_message(); \
@@ -48,7 +49,8 @@ uint8_t parse_literal(unsigned char *s, const unsigned char *literal) {
     return tag;
 }
 
-void set_time() {
+void set_time(unsigned char *s) {
+    uint8_t len = strlen(s);
     SEND_VALID("set time");
 }
 
@@ -56,12 +58,24 @@ void set_alarm_count() {
     SEND_VALID("set alarm / count ");
 }
 
-void list() {
-    SEND_VALID("list alarm/countdown");
+void list(int type) {
+    if (type == 1) {
+        SEND_VALID("list alarm");
+    }
+    else {
+        SEND_VALID("list countdown");
+    }
+
 }
 
-void cancel() {
-    SEND_VALID("cancel alarm/countdown");
+void cancel(int type) {
+    if (type == 1) {
+        SEND_VALID("cancel alarm");
+    }
+    else {
+        SEND_VALID("cancel countdown");
+    }
+
 }
 void parse_command(unsigned char *s) {
     uint8_t  len = strlen(s);
@@ -73,15 +87,19 @@ void parse_command(unsigned char *s) {
                 if (parse_literal(s, "set") && len >= 5) {
                     SEND_VALID("set");
                     p += 4;
-                    for (int i = 0; i < 3; i++) {
+                    int i;
+                    for (i = 0; i < 3; i++) {
                         if (parse_literal(p, set_comm[i])) {
                             if(i == 0) {
-                                set_time();
+                                set_time(p);
                             }
                             else {
                                 set_alarm_count();
                             }
                         }
+                    }
+                    if (i == 3) {
+                        SEND_INVALID();
                     }
                 }
                 else {
@@ -92,10 +110,14 @@ void parse_command(unsigned char *s) {
                 if (parse_literal(s, "list") && len >= 6) {
                     SEND_VALID("list");
                     p += 5;
-                    for (int i = 0 ; i < 2; i++) {
+                    int i = 0;
+                    for (i = 0 ; i < 2; i++) {
                         if (parse_literal(p, lc_comm[i])) {
-                            list();
+                            list(i);
                         }
+                    }
+                    if (i == 2) {
+                        SEND_INVALID();
                     }
 
                 }
@@ -108,10 +130,14 @@ void parse_command(unsigned char *s) {
                 if (parse_literal(s, "cancel") && len >= 8) {
                     SEND_VALID("cancel");
                     p += 7;
-                    for (int i = 0 ; i < 2 ; i++) {
+                    int i = 0;
+                    for (i = 0 ; i < 2 ; i++) {
                         if (parse_literal(p, lc_comm[i])) {
-                            cancel();
+                            cancel(i);
                         }
+                    }
+                    if (i == 2) {
+                        SEND_INVALID();
                     }
                 }
                 else {
