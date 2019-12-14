@@ -165,9 +165,17 @@ void set_time(unsigned char *s) {
         strncpy(time_str, s + 5, 14);
         sprintf(msg, "Time String : %s\r\n", time_str);
         send_message();
-        parse_date_str(time_str);
-        parse_time_str(time_str + 8);
-
+        uint8_t ret1 = parse_date_str(time_str);
+        uint8_t ret2 = parse_time_str(time_str + 8);
+        if( (ret1==0) && (ret2==0) ){ // both date, time valid
+            setting_values[0] = date_to_set[0];
+            setting_values[1] = date_to_set[1];
+            setting_values[2] = date_to_set[2];
+            setting_values[3] = time_to_set[0];
+            setting_values[4] = time_to_set[1];
+            setting_values[5] = time_to_set[2];
+            save_set_value_back();
+        }
 }
     else {
         SEND_INVALID();
