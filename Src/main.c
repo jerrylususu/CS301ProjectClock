@@ -148,11 +148,11 @@ int main(void)
         }
 
         // LED0 for alarm
-        if(alarm_ringing){
+        if(alarm_ringing==1){
             HAL_GPIO_TogglePin(LED0_GPIO_Port, LED0_Pin);
         }
 
-        if(countdown_ringing){
+        if(countdown_ringing==1){
             HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
         }
 
@@ -214,11 +214,13 @@ void dismiss_alarm_countdown(){
     if(alarm_ringing==1){
         alarm_ringing = 0;
         alarm[current_ringing_alarm].hour = 255;
+        HAL_GPIO_WritePin(LED0_GPIO_Port, LED0_Pin, GPIO_PIN_SET);
     }
 
     if(countdown_ringing==1){
         countdown_ringing = 0;
         countdown[current_ringing_countdown].hour = 255;
+        HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
     }
 }
 
@@ -230,7 +232,7 @@ void check_for_alarm_countdown(){
 
     for(uint8_t i=0;i<4;i++){
         if( hour==alarm[i].hour && minute==alarm[i].minute && second==alarm[i].second){
-            alarm_ringing==1;
+            alarm_ringing=1;
             current_ringing_alarm=i;
             alarm[i].hour=254;
         }
@@ -238,7 +240,7 @@ void check_for_alarm_countdown(){
 
     for(uint8_t i=0;i<4;i++){
         if( hour==countdown[i].hour && minute==countdown[i].minute && second==countdown[i].second){
-            countdown_ringing==1;
+            countdown_ringing=1;
             current_ringing_countdown=i;
             countdown[i].hour=254;
         }
