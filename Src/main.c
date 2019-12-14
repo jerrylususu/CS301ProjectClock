@@ -77,6 +77,7 @@ my_time countdown[4];
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void display_real_clock();
 void show_analogue(u_int32_t accumulative_second);
 void show_digit(u_int32_t accumulative_second);
 void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day);
@@ -139,6 +140,7 @@ int main(void)
     sprintf(time_text, " ");
     while (1)
   {
+      LCD_Clear(WHITE);
     /* USER CODE END WHILE */
 //        sprintf(m, "hello, y=%d", y++);
       POINT_COLOR = BLACK;
@@ -148,7 +150,7 @@ int main(void)
 //        setting_display();
 
         if(mode==0 || mode==1){
-             time_display_for_debug();
+             display_real_clock();
         } else {
             setting_display();
         }
@@ -416,8 +418,17 @@ void time_display_for_debug(){
 
 // utils
 
-void switch_face(){
+// real display
+void display_real_clock(){
     // switch between analogue and digit
+    if(mode==0){ // sim
+        show_analogue(time_in_sec);
+    } else { // digi
+        show_digit(time_in_sec);
+    }
+    show_calendar(year, month, day);
+    show_clock(1);
+    show_countdown(1);
 }
 
 void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day){
