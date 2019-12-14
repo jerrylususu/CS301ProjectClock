@@ -660,7 +660,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
             break;
         case KEY1_Pin:
             if (HAL_GPIO_ReadPin(KEY1_GPIO_Port, KEY1_Pin) == GPIO_PIN_RESET) {
-                update_screen();
 
                 switch (mode){
                     case 0:
@@ -685,8 +684,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
             break;
         case KEY_WK_Pin:
             if (HAL_GPIO_ReadPin(KEY_WK_GPIO_Port, KEY_WK_Pin) == GPIO_PIN_SET) {
-
-                update_screen();
 
                 switch (mode){
                     case 0: // sim clock
