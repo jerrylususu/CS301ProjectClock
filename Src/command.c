@@ -197,10 +197,14 @@ void set_alarm_count(unsigned char *s, uint8_t type) {
     SEND_VALID("set alarm / count ");
 
     uint8_t offset = type == 1 ? 6 : 10;
-    if (len >= offset + 6) {
+    if (len >= offset + 8) {
         SEND_VALID("time length");
+        uint8_t id = s[offset] - '0';
 
-        strncpy(time_str, s + offset, 6);
+        sprintf(msg,"set_id = %d\r\n", id);
+        send_message();
+
+        strncpy(time_str, s + offset + 2, 6);
         sprintf(msg,"Time String :%s\r\n", time_str);
         send_message();
         parse_time_str(time_str);
