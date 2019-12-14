@@ -29,6 +29,7 @@
 #include "lcd.h"
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -38,6 +39,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define PI acos(-1)
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -57,6 +59,7 @@ uint8_t currentBackground = 6;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void show_analogue(u_int32_t accumulative_second);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -110,13 +113,10 @@ int main(void)
     while (1)
   {
     /* USER CODE END WHILE */
-        sprintf(m, "hello, y=%d", y++);
-      POINT_COLOR = BLACK;
-      LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) "        ");
-      LCD_ShowString(0, 0, 200, 16, 16, (uint8_t*) time_text);
-      HAL_Delay(500);
+
     /* USER CODE BEGIN 3 */
 
+    show_analogue(7215);
   }
   /* USER CODE END 3 */
 }
@@ -161,6 +161,48 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 
 // utils
+
+void switch_face(){
+
+}
+
+void show_calendar(u_int32_t year, u_int32_t month, u_int32_t day){
+
+}
+
+void show_analogue(u_int32_t accumulative_second){
+    // get hour, minute, second
+    u_int32_t hour = accumulative_second / 3600;
+    u_int32_t minute = (accumulative_second % 3600) / 60;
+    u_int32_t second = accumulative_second - 3600 * hour - 60 * minute;
+    if (hour > 12) hour -= 12;
+    u_int32_t x0 = 120;
+    u_int32_t y0 = 120;
+    double a_hour, a_min, a_sec;
+    u_int32_t x_hour, y_hour, x_min, y_min, x_sec, y_sec;
+    // get radian
+    a_sec = second * 2 * PI / 60;
+    a_min = minute * 2 * PI / 60 ;
+    a_hour= hour * 2 * PI / 12 + a_min / 12;
+    // get end locations of 3 pointers
+    x_sec = 120 + (int)(85 * sin(a_sec));
+    y_sec = 120 - (int)(85 * cos(a_sec));
+    x_min = 120 + (int)(65 * sin(a_min));
+    y_min = 120 - (int)(65 * cos(a_min));
+    x_hour= 120 + (int)(45 * sin(a_hour));
+    y_hour= 120 - (int)(45 * cos(a_hour));
+    LCD_Draw_Circle(x0, y0, 100);
+    LCD_DrawLine(x0, y0, x_sec, y_sec);
+    LCD_DrawLine(x0, y0, x_min, y_min);
+    LCD_DrawLine(x0, y0, x_hour, y_hour);
+}
+
+void show_digit(u_int32_t accumulative_second){
+    u_int32_t hour = accumulative_second / 3600;
+    u_int32_t minute = (accumulative_second % 3600) / 60;
+    u_int32_t second = accumulative_second - 3600 * hour - 60 * minute;
+
+}
 
 void send_message_invoke(){
     HAL_UART_Transmit(&huart1, (uint8_t *) msg, strlen(msg), HAL_MAX_DELAY);
@@ -223,10 +265,10 @@ void update_screen(){
     POINT_COLOR = BLACK;
     LCD_DrawRectangle(30, 150, 210, 190);
     LCD_Fill(31, 151, 209, 189, YELLOW);
-//    x++;
-//    if (x == 12)
-//        x = 0;
-//    HAL_Delay(2000);
+    currentBackground++;
+    if (currentBackground == 12)
+        currentBackground = 0;
+    HAL_Delay(2000);
 }
 
 // system interrupt handlers & callbacks
