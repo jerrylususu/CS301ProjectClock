@@ -242,6 +242,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
         if(rxBuffer[0] == '\n')
         {
             parse_command(uRx_Data);
+            memset(uRx_Data, 0 , sizeof(uRx_Data));
             //HAL_UART_Transmit(&huart1, uRx_Data, uLength, 0xffff);
             uLength = 0;
         }
