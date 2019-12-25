@@ -83,6 +83,7 @@ uint8_t alarm_set, countdown_set;
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void blink_whole_screen();
 void display_real_clock();
 void show_analogue(u_int32_t accumulative_second);
 void show_digit(u_int32_t accumulative_second);
@@ -155,11 +156,16 @@ int main(void)
 //      LCD_ShowString(220,300, 200,16,16, (uint8_t*) "H");
 //        setting_display();
 
-        if(mode==0 || mode==1){
-             display_real_clock();
+        if(alarm_ringing==0 && countdown_ringing==0 && mode!=2 ){
+            if(mode==0 || mode==1){
+                display_real_clock();
+            } else {
+                setting_display();
+            }
         } else {
-            setting_display();
+            blink_whole_screen();
         }
+
 
         // LED0 for alarm
         if(alarm_ringing==1){
@@ -439,6 +445,27 @@ void time_display_for_debug(){
 
 // utils
 
+void blink_whole_screen(){
+    if(blink_setting % 2== 0){
+        LCD_Fill(0,0,240, 235, WHITE);
+    } else {
+        LCD_Fill(0,0,240, 235, RED);
+    }
+    if(alarm_ringing==1){
+        LCD_ShowString(60,120,200,30,24,(uint8_t*) "ALARM");
+    } else if(countdown_ringing==1) {
+        LCD_ShowString(60,120,200,30,24,(uint8_t*) "COUNTDOWN");
+    }
+    LCD_ShowString(60,160,200,30,24,(uint8_t*) "RINGING");
+
+    show_alarm(alarm_set);
+    show_countdown(countdown_set);
+
+    LCD_ShowString(60,300,200,16,12, (uint8_t*)"[A/D] [Set] [Dismiss]");
+
+}
+
+
 // real display
 void display_real_clock(){
     // switch between analogue and digit
@@ -459,6 +486,7 @@ void show_calendar(u_int16_t year, u_int8_t month, u_int8_t day){
     char tmpStr[30];
     POINT_COLOR = BLUE;
     sprintf(tmpStr, "%04d / %02d / %02d", year, month, day);
+    POINT_COLOR = RED;
     LCD_ShowString(60, 240, 140, 30, 16, (uint8_t*) tmpStr);
 }
 
