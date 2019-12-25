@@ -181,6 +181,9 @@ void set_time(unsigned char *s) {
             setting_values[4] = time_to_set[1];
             setting_values[5] = time_to_set[2];
             save_set_value_back();
+
+            sprintf(msg, "success\r\n");
+            send_message();
         }
 }
     else {
@@ -237,6 +240,8 @@ void set_alarm_count(unsigned char *s, uint8_t type) {
                 countdown[id].minute = minute;
                 countdown[id].second = second;
             }
+            sprintf(msg, "success\r\n");
+            send_message();
         }
     }
     else {
@@ -325,6 +330,9 @@ void cancel(unsigned char *s, int type) {
             countdown[id].hour = 255;
         }
 
+        sprintf(msg, "success\r\n");
+        send_message();
+
     }
     else {
         SEND_INVALID();
@@ -412,6 +420,8 @@ void set_rest(unsigned char *s, uint8_t type){
 
     if(valid_to_change==1){
         save_set_value_back();
+        sprintf(msg, "success\r\n");
+        send_message();
     } else {
         sprintf(msg, "invalid value\r\n");
         send_message();

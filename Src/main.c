@@ -64,6 +64,7 @@ uint8_t day=14;
 uint32_t time_when_start_setting;
 uint8_t mode=0; // 0: sim clock disp, 1: digital clock disp, 2: setting
 uint8_t sub_mode=0; // submode setting
+uint8_t last_mode=0;  // mode used last time, sim or digit
 
 int setting_values[6]; // values to be set in setting mode
 
@@ -74,6 +75,9 @@ uint8_t alarm_ringing, countdown_ringing;
 
 my_time alarm[4];
 my_time countdown[4];
+my_time remember_countdown[4];
+
+uint8_t blink_setting = 0;
 
 uint8_t alarm_set, countdown_set;
 
@@ -511,10 +515,18 @@ void show_digit(u_int32_t accumulative_second){
 void show_alarm(_Bool whether_alarm){
     POINT_COLOR = BLACK;
     LCD_DrawRectangle(19, 269, 111, 291);
-    if (!whether_alarm){
-        LCD_Fill(20, 270, 110, 290, LGRAY);
+    if(alarm_ringing==0){ // currently no alarm ringing
+        if (!whether_alarm){
+            LCD_Fill(20, 270, 110, 290, LGRAY);
+        } else {
+            LCD_Fill(20, 270, 110, 290, GREEN);
+        }
     } else {
-        LCD_Fill(20, 270, 110, 290, GREEN);
+        if (blink_setting % 2 == 0){
+            LCD_Fill(20, 270, 110, 290, LGRAY);
+        } else {
+            LCD_Fill(20, 270, 110, 290, RED);
+        }
     }
     POINT_COLOR = BLACK;
     LCD_ShowString(47, 275, 50, 20, 16, (uint8_t*)"alarm");
@@ -523,11 +535,22 @@ void show_alarm(_Bool whether_alarm){
 void show_countdown(_Bool whether_countdown){
     POINT_COLOR = BLACK;
     LCD_DrawRectangle(129, 269, 221, 291);
-    if (!whether_countdown){
-        LCD_Fill(130, 270, 220, 290, LGRAY);
+
+    if(countdown_ringing==0){
+        if (!whether_countdown){
+            LCD_Fill(130, 270, 220, 290, LGRAY);
+        } else {
+            LCD_Fill(130, 270, 220, 290, GREEN);
+        }
     } else {
-        LCD_Fill(130, 270, 220, 290, GREEN);
+        if (blink_setting % 2==0){
+            LCD_Fill(130, 270, 220, 290, LGRAY);
+        } else {
+            LCD_Fill(130, 270, 220, 290, RED);
+        }
     }
+
+
     POINT_COLOR = BLACK;
     LCD_ShowString(140, 275, 70, 20, 16, (uint8_t*)"countdown");
 }
@@ -681,6 +704,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                 switch (mode){
                     case 0:
                     case 1: // enter setting mode in both sim/digi clock
+                        last_mode = mode;
                         mode = 2;
                         freeze_values_for_setting();
                         break;
@@ -715,7 +739,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
                         } else { // finished setting
                             save_set_value_back(); // save values back
                             sub_mode = 0;
-                            mode = 0; // back to sim
+                            mode = last_mode; // back to sim
                         }
                         break;
                 }
@@ -742,6 +766,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
         // check for alarm and countdown
         check_for_alarm_countdown();
 
+        // do blink
+        blink_setting++;
 //        sprintf(msg, "sec=%lu, mode=%d, sub=%d", time_in_sec, mode, sub_mode);
 //        sprintf(msg, "sec=%lu", time_in_sec);
 //        send_message_invoke();
